@@ -50,6 +50,7 @@ public class BlogServiceImpl implements BlogService {
         blogWithBLOBs.setBlogTitle(blogAddVO.getBlogTitle());
         blogWithBLOBs.setBlogContent(blogAddVO.getBlogContent());
         blogWithBLOBs.setBlogCategoryId(blogAddVO.getBlogCategoryId());
+        blogWithBLOBs.setBlogCover(blogAddVO.getBlogCover());
         int row = blogMapper.insertSelective(blogWithBLOBs);
         return CodeMessageUtil.addMessage(row);
     }

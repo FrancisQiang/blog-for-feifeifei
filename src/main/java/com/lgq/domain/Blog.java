@@ -21,6 +21,8 @@ public class Blog {
 
     private Integer blogCategoryId;
 
+    private String blogCover;
+
     public Integer getBlogId() {
         return blogId;
     }
@@ -91,5 +93,13 @@ public class Blog {
 
     public void setBlogCategoryId(Integer blogCategoryId) {
         this.blogCategoryId = blogCategoryId;
+    }
+
+    public String getBlogCover() {
+        return blogCover;
+    }
+
+    public void setBlogCover(String blogCover) {
+        this.blogCover = blogCover == null ? null : blogCover.trim();
     }
 }

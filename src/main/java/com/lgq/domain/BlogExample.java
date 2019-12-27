@@ -654,6 +654,76 @@ public class BlogExample {
             addCriterion("blog_category_id not between", value1, value2, "blogCategoryId");
             return (Criteria) this;
         }
+
+        public Criteria andBlogCoverIsNull() {
+            addCriterion("blog_cover is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBlogCoverIsNotNull() {
+            addCriterion("blog_cover is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBlogCoverEqualTo(String value) {
+            addCriterion("blog_cover =", value, "blogCover");
+            return (Criteria) this;
+        }
+
+        public Criteria andBlogCoverNotEqualTo(String value) {
+            addCriterion("blog_cover <>", value, "blogCover");
+            return (Criteria) this;
+        }
+
+        public Criteria andBlogCoverGreaterThan(String value) {
+            addCriterion("blog_cover >", value, "blogCover");
+            return (Criteria) this;
+        }
+
+        public Criteria andBlogCoverGreaterThanOrEqualTo(String value) {
+            addCriterion("blog_cover >=", value, "blogCover");
+            return (Criteria) this;
+        }
+
+        public Criteria andBlogCoverLessThan(String value) {
+            addCriterion("blog_cover <", value, "blogCover");
+            return (Criteria) this;
+        }
+
+        public Criteria andBlogCoverLessThanOrEqualTo(String value) {
+            addCriterion("blog_cover <=", value, "blogCover");
+            return (Criteria) this;
+        }
+
+        public Criteria andBlogCoverLike(String value) {
+            addCriterion("blog_cover like", value, "blogCover");
+            return (Criteria) this;
+        }
+
+        public Criteria andBlogCoverNotLike(String value) {
+            addCriterion("blog_cover not like", value, "blogCover");
+            return (Criteria) this;
+        }
+
+        public Criteria andBlogCoverIn(List<String> values) {
+            addCriterion("blog_cover in", values, "blogCover");
+            return (Criteria) this;
+        }
+
+        public Criteria andBlogCoverNotIn(List<String> values) {
+            addCriterion("blog_cover not in", values, "blogCover");
+            return (Criteria) this;
+        }
+
+        public Criteria andBlogCoverBetween(String value1, String value2) {
+            addCriterion("blog_cover between", value1, value2, "blogCover");
+            return (Criteria) this;
+        }
+
+        public Criteria andBlogCoverNotBetween(String value1, String value2) {
+            addCriterion("blog_cover not between", value1, value2, "blogCover");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

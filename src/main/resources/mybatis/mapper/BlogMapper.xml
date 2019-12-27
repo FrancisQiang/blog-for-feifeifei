@@ -5,7 +5,6 @@
         <id column="blog_id" jdbcType="INTEGER" property="blogId"/>
         <result column="blog_title" jdbcType="VARCHAR" property="blogTitle"/>
     </resultMap>
-    <!--  自定义-->
     <resultMap id="BlogGetPreDTO" type="com.lgq.dto.BlogPreGetDTO">
         <id column="blog_id" jdbcType="INTEGER" property="blogId"/>
         <result column="blog_create_time" jdbcType="TIMESTAMP" property="blogCreateTime"/>
@@ -17,6 +16,7 @@
         <result column="blog_category_id" jdbcType="INTEGER" property="blogCategoryId"/>
         <result column="category_name" jdbcType="INTEGER" property="blogCategoryName"/>
         <result column="blog_summary" jdbcType="LONGVARCHAR" property="blogSummary"/>
+        <result column="blog_cover" jdbcType="VARCHAR" property="blogCover"/>
     </resultMap>
     <!--  自定义-->
     <resultMap id="BlogContentPreGetDTO" type="com.lgq.dto.BlogContentPreGetDTO">
@@ -30,6 +30,7 @@
         <result column="blog_category_id" jdbcType="INTEGER" property="blogCategoryId"/>
         <result column="category_name" jdbcType="INTEGER" property="blogCategoryName"/>
         <result column="blog_content" jdbcType="LONGVARCHAR" property="blogContent"/>
+        <result column="blog_cover" jdbcType="VARCHAR" property="blogCover" />
     </resultMap>
     <resultMap id="BaseResultMap" type="com.lgq.domain.Blog">
         <id column="blog_id" jdbcType="INTEGER" property="blogId"/>
@@ -41,6 +42,7 @@
         <result column="blog_recommend" jdbcType="BIT" property="blogRecommend"/>
         <result column="blog_delete_flag" jdbcType="BIT" property="blogDeleteFlag"/>
         <result column="blog_category_id" jdbcType="INTEGER" property="blogCategoryId"/>
+        <result column="blog_cover" jdbcType="VARCHAR" property="blogCover"/>
     </resultMap>
     <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.lgq.domain.BlogWithBLOBs">
         <result column="blog_summary" jdbcType="LONGVARCHAR" property="blogSummary"/>
@@ -108,7 +110,7 @@
     </sql>
     <sql id="Base_Column_List">
         blog_id, blog_create_time, blog_update_time, blog_title, blog_views, blog_reply,
-    blog_recommend, blog_delete_flag, blog_category_id
+    blog_recommend, blog_delete_flag, blog_category_id, blog_cover
     </sql>
     <sql id="Blob_Column_List">
         blog_summary, blog_content
@@ -166,11 +168,11 @@
         insert into blog (blog_id, blog_create_time, blog_update_time,
                           blog_title, blog_views, blog_reply,
                           blog_recommend, blog_delete_flag, blog_category_id,
-                          blog_summary, blog_content)
+                          blog_cover, blog_summary, blog_content)
         values (#{blogId,jdbcType=INTEGER}, #{blogCreateTime,jdbcType=TIMESTAMP}, #{blogUpdateTime,jdbcType=TIMESTAMP},
                 #{blogTitle,jdbcType=VARCHAR}, #{blogViews,jdbcType=INTEGER}, #{blogReply,jdbcType=INTEGER},
                 #{blogRecommend,jdbcType=BIT}, #{blogDeleteFlag,jdbcType=BIT}, #{blogCategoryId,jdbcType=INTEGER},
-                #{blogSummary,jdbcType=LONGVARCHAR}, #{blogContent,jdbcType=LONGVARCHAR})
+                #{blogCover,jdbcType=VARCHAR}, #{blogSummary,jdbcType=LONGVARCHAR}, #{blogContent,jdbcType=LONGVARCHAR})
     </insert>
     <insert id="insertSelective" parameterType="com.lgq.domain.BlogWithBLOBs">
         insert into blog
@@ -201,6 +203,9 @@
             </if>
             <if test="blogCategoryId != null">
                 blog_category_id,
+            </if>
+            <if test="blogCover != null">
+                blog_cover,
             </if>
             <if test="blogSummary != null">
                 blog_summary,
@@ -236,6 +241,9 @@
             </if>
             <if test="blogCategoryId != null">
                 #{blogCategoryId,jdbcType=INTEGER},
+            </if>
+            <if test="blogCover != null">
+                #{blogCover,jdbcType=VARCHAR},
             </if>
             <if test="blogSummary != null">
                 #{blogSummary,jdbcType=LONGVARCHAR},
@@ -281,6 +289,9 @@
             <if test="record.blogCategoryId != null">
                 blog_category_id = #{record.blogCategoryId,jdbcType=INTEGER},
             </if>
+            <if test="record.blogCover != null">
+                blog_cover = #{record.blogCover,jdbcType=VARCHAR},
+            </if>
             <if test="record.blogSummary != null">
                 blog_summary = #{record.blogSummary,jdbcType=LONGVARCHAR},
             </if>
@@ -303,6 +314,7 @@
         blog_recommend = #{record.blogRecommend,jdbcType=BIT},
         blog_delete_flag = #{record.blogDeleteFlag,jdbcType=BIT},
         blog_category_id = #{record.blogCategoryId,jdbcType=INTEGER},
+        blog_cover = #{record.blogCover,jdbcType=VARCHAR},
         blog_summary = #{record.blogSummary,jdbcType=LONGVARCHAR},
         blog_content = #{record.blogContent,jdbcType=LONGVARCHAR}
         <if test="_parameter != null">
@@ -319,7 +331,8 @@
         blog_reply = #{record.blogReply,jdbcType=INTEGER},
         blog_recommend = #{record.blogRecommend,jdbcType=BIT},
         blog_delete_flag = #{record.blogDeleteFlag,jdbcType=BIT},
-        blog_category_id = #{record.blogCategoryId,jdbcType=INTEGER}
+        blog_category_id = #{record.blogCategoryId,jdbcType=INTEGER},
+        blog_cover = #{record.blogCover,jdbcType=VARCHAR}
         <if test="_parameter != null">
             <include refid="Update_By_Example_Where_Clause"/>
         </if>
@@ -351,6 +364,9 @@
             <if test="blogCategoryId != null">
                 blog_category_id = #{blogCategoryId,jdbcType=INTEGER},
             </if>
+            <if test="blogCover != null">
+                blog_cover = #{blogCover,jdbcType=VARCHAR},
+            </if>
             <if test="blogSummary != null">
                 blog_summary = #{blogSummary,jdbcType=LONGVARCHAR},
             </if>
@@ -370,6 +386,7 @@
             blog_recommend   = #{blogRecommend,jdbcType=BIT},
             blog_delete_flag = #{blogDeleteFlag,jdbcType=BIT},
             blog_category_id = #{blogCategoryId,jdbcType=INTEGER},
+            blog_cover       = #{blogCover,jdbcType=VARCHAR},
             blog_summary     = #{blogSummary,jdbcType=LONGVARCHAR},
             blog_content     = #{blogContent,jdbcType=LONGVARCHAR}
         where blog_id = #{blogId,jdbcType=INTEGER}
@@ -383,23 +400,49 @@
             blog_reply       = #{blogReply,jdbcType=INTEGER},
             blog_recommend   = #{blogRecommend,jdbcType=BIT},
             blog_delete_flag = #{blogDeleteFlag,jdbcType=BIT},
-            blog_category_id = #{blogCategoryId,jdbcType=INTEGER}
+            blog_category_id = #{blogCategoryId,jdbcType=INTEGER},
+            blog_cover       = #{blogCover,jdbcType=VARCHAR}
         where blog_id = #{blogId,jdbcType=INTEGER}
     </update>
     <select id="getBlogList" resultMap="BlogGetPreDTO">
-       select blog_id,blog_create_time,blog_update_time,blog_title
-            ,blog_views,blog_reply,blog_recommend,blog_category_id,category_name,blog_summary
-        from blog,category where blog_category_id = category_id and blog_delete_flag = 0
+        select blog_id
+             , blog_create_time
+             , blog_update_time
+             , blog_title
+             , blog_views
+             , blog_reply
+             , blog_recommend
+             , blog_category_id
+             , category_name
+             , blog_summary
+        , blog_cover
+        from blog,
+             category
+        where blog_category_id = category_id
+          and blog_delete_flag = 0
     </select>
 
     <select id="getBlogListByCategory" resultMap="BlogGetByCategoryDTO" parameterType="java.lang.Integer">
-        select blog_id,blog_title
-        from blog where blog_category_id = #{id}
+        select blog_id, blog_title
+        from blog
+        where blog_category_id = #{id}
     </select>
     <select id="getBlogContentById" resultMap="BlogContentPreGetDTO" parameterType="java.lang.Integer">
-        select blog_id,blog_create_time,blog_update_time,blog_title
-             ,blog_views,blog_reply,blog_recommend,blog_category_id,category_name,blog_content
-        from blog,category where blog_category_id = category_id and blog_delete_flag = 0 and blog_id = #{id}
+        select blog_id
+             , blog_create_time
+             , blog_update_time
+             , blog_title
+             , blog_views
+             , blog_reply
+             , blog_recommend
+             , blog_category_id
+             , category_name
+             , blog_content
+        ,blog_cover
+        from blog,
+             category
+        where blog_category_id = category_id
+          and blog_delete_flag = 0
+          and blog_id = #{id}
     </select>
-
 </mapper>

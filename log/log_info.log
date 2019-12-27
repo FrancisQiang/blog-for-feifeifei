@@ -24,3 +24,351 @@
 2019-12-27 10:33:30.565 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 2019-12-27 10:33:30.595 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
 2019-12-27 10:33:30.595 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 6.703 seconds (JVM running for 8.723)
+2019-12-27 10:34:43.328 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 10:34:43.328 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 10:34:43.338 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2019-12-27 10:34:43.368 [http-nio-8080-exec-1] INFO  com.lgq.controller.UserController - FrancisBlog: getAllUser
+2019-12-27 10:34:43.418 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 10:34:46.596 [http-nio-8080-exec-2] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 10:34:49.347 [http-nio-8080-exec-3] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 10:48:26.182 [http-nio-8080-exec-5] INFO  com.lgq.controller.UserController - FrancisBlog: getAllUser
+2019-12-27 10:48:30.776 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 10:48:52.148 [http-nio-8080-exec-7] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 10:50:58.837 [http-nio-8080-exec-9] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 10:51:20.228 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: addAdvertisement -> {"advertisementDescription":"是","advertisementName":"啊","advertisementPicture":"http://img.francisqiang.top/1577415062","advertisementUrl":"啊"}
+2019-12-27 10:51:20.743 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 10:51:27.252 [http-nio-8080-exec-4] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: deleteAdvertisement:1
+2019-12-27 10:51:27.495 [http-nio-8080-exec-5] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 10:51:28.566 [http-nio-8080-exec-6] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 10:51:56.329 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: updateAdvertisement -> {"advertisementDescription":"啊","advertisementName":"啊","advertisementPicture":"http://img.francisqiang.top/1577415062","advertisementUrl":"啊"}
+2019-12-27 10:51:56.357 [http-nio-8080-exec-9] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 10:57:40.236 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 4288 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 10:57:40.238 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 10:57:41.207 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 10:57:41.209 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 10:57:41.269 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 0 Redis repository interfaces.
+2019-12-27 10:57:41.551 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 10:57:41.805 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 10:57:41.813 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:57:41.814 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 10:57:41.814 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 10:57:41.815 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 10:57:41.816 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 10:57:41.816 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 10:57:41.816 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 10:57:42.879 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 10:57:42.987 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 10:57:42.987 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2697 ms
+2019-12-27 10:57:43.827 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 10:57:43.950 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 10:57:44.388 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 10:57:44.405 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 10:57:44.456 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 10:57:44.597 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 10:57:44.721 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:57:44.744 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 10:57:44.747 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 5.192 seconds (JVM running for 7.019)
+2019-12-27 10:57:51.710 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 10:57:51.710 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 10:57:51.719 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-12-27 10:57:51.746 [http-nio-8080-exec-1] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 10:58:12.763 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 10:58:15.987 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 10:58:19.068 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-27 10:58:19.981 [http-nio-8080-exec-5] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 10:59:16.111 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 3096 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 10:59:16.114 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 10:59:17.126 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 10:59:17.128 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 10:59:17.188 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 0 Redis repository interfaces.
+2019-12-27 10:59:17.455 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 10:59:17.690 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 10:59:17.699 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:59:17.700 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 10:59:17.700 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 10:59:17.701 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 10:59:17.702 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 10:59:17.702 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 10:59:17.702 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 10:59:18.777 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 10:59:18.877 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 10:59:18.877 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2684 ms
+2019-12-27 10:59:19.703 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 10:59:19.809 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 10:59:20.235 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 10:59:20.253 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 10:59:20.299 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 10:59:20.418 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 10:59:20.521 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:59:20.543 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 10:59:20.545 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 4.961 seconds (JVM running for 6.758)
+2019-12-27 10:59:29.604 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 10:59:29.605 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 10:59:29.613 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-12-27 10:59:29.639 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 10:59:29.700 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 10:59:35.056 [http-nio-8080-exec-2] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 10:59:48.989 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: updateAdvertisement -> {"advertisementDescription":"啊","advertisementName":"啊","advertisementPicture":"http://img.francisqiang.top/1577415062","advertisementUrl":"啊"}
+2019-12-27 10:59:49.036 [http-nio-8080-exec-4] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:00:02.550 [http-nio-8080-exec-5] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: updateAdvertisement -> {"advertisementDescription":"多少岁","advertisementName":"啊","advertisementPicture":"http://img.francisqiang.top/1577415062","advertisementUrl":"瘦瘦瘦"}
+2019-12-27 11:00:02.579 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:01:42.542 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:01:47.336 [http-nio-8080-exec-9] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 11:05:38.281 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:05:40.153 [http-nio-8080-exec-2] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 11:06:08.470 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:06:10.389 [http-nio-8080-exec-4] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 11:06:19.315 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: updateAdvertisement -> {"advertisementDescription":"去","advertisementName":"啊","advertisementPicture":"","advertisementUrl":"啊"}
+2019-12-27 11:06:19.334 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:06:44.332 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:06:46.587 [http-nio-8080-exec-9] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 11:06:48.676 [http-nio-8080-exec-10] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: updateAdvertisement -> {"advertisementDescription":"是","advertisementName":"啊","advertisementPicture":"","advertisementUrl":"啊"}
+2019-12-27 11:06:48.698 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:06:55.726 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: updateAdvertisement -> {"advertisementDescription":"去","advertisementId":2,"advertisementName":"啊","advertisementPicture":"","advertisementUrl":"啊"}
+2019-12-27 11:06:55.941 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:07:05.313 [http-nio-8080-exec-4] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: updateAdvertisement -> {"advertisementDescription":"去","advertisementId":2,"advertisementName":"啊","advertisementPicture":"","advertisementUrl":"啊"}
+2019-12-27 11:07:05.343 [http-nio-8080-exec-5] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:07:19.941 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: updateAdvertisement -> {"advertisementDescription":"去","advertisementId":2,"advertisementName":"啊","advertisementPicture":"","advertisementUrl":"啊"}
+2019-12-27 11:07:19.976 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:07:40.266 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:07:42.543 [http-nio-8080-exec-9] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 11:07:47.810 [http-nio-8080-exec-10] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: updateAdvertisement -> {"advertisementDescription":"去","advertisementName":"啊","advertisementPicture":"http://img.francisqiang.top/1577416065","advertisementUrl":"啊"}
+2019-12-27 11:07:47.829 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:09:29.368 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:10:03.191 [http-nio-8080-exec-5] INFO  com.lgq.controller.UserController - FrancisBlog: signIn -> {"userAccount":"1326338672","userPassword":"12345"}
+2019-12-27 11:10:08.496 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:10:16.621 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:12:16.377 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 11852 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 11:12:16.379 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 11:12:17.384 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 11:12:17.388 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 11:12:17.446 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45ms. Found 0 Redis repository interfaces.
+2019-12-27 11:12:17.715 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 11:12:17.952 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 11:12:17.959 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:12:17.960 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 11:12:17.961 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 11:12:17.963 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 11:12:17.963 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 11:12:17.963 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 11:12:17.963 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 11:12:19.027 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 11:12:19.122 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 11:12:19.123 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2648 ms
+2019-12-27 11:12:19.943 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 11:12:20.047 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 11:12:20.461 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 11:12:20.476 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 11:12:20.523 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 11:12:20.648 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 11:12:20.747 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:12:20.769 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 11:12:20.771 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 4.958 seconds (JVM running for 6.671)
+2019-12-27 11:12:23.414 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 11:12:23.414 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 11:12:23.423 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2019-12-27 11:12:23.449 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:12:23.508 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 11:12:32.994 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: deleteAdvertisement:2
+2019-12-27 11:12:33.562 [http-nio-8080-exec-4] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:12:34.305 [http-nio-8080-exec-5] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 11:12:43.716 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: addAdvertisement -> {"advertisementDescription":"aaa","advertisementName":"aaa ","advertisementPicture":"http://img.francisqiang.top/1577416358","advertisementUrl":"aaa"}
+2019-12-27 11:12:43.959 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:12:47.767 [http-nio-8080-exec-9] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 11:12:54.564 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: updateAdvertisement -> {"advertisementDescription":"aaa","advertisementId":3,"advertisementName":"aaa","advertisementPicture":"http://img.francisqiang.top/1577416370","advertisementUrl":"aaa"}
+2019-12-27 11:12:54.917 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:13:18.991 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:16:44.251 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 12768 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 11:16:44.261 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 11:16:45.501 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 11:16:45.511 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 11:16:45.561 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41ms. Found 0 Redis repository interfaces.
+2019-12-27 11:16:45.810 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 11:16:46.040 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 11:16:46.050 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:16:46.050 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 11:16:46.050 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 11:16:46.050 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 11:16:46.050 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 11:16:46.050 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 11:16:46.050 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 11:16:47.110 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 11:16:47.190 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 11:16:47.190 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2829 ms
+2019-12-27 11:16:47.969 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 11:16:48.079 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 11:16:48.459 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 11:16:48.469 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 11:16:48.519 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 11:16:48.639 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 11:16:48.739 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:16:48.759 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 11:16:48.759 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 5.04 seconds (JVM running for 7.061)
+2019-12-27 11:20:26.235 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 11:20:26.235 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 11:20:26.245 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2019-12-27 11:20:26.365 [http-nio-8080-exec-2] INFO  com.lgq.controller.UserController - FrancisBlog: signIn -> {"userAccount":"2487049041","userPassword":"123456"}
+2019-12-27 11:20:26.415 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 11:20:29.436 [http-nio-8080-exec-3] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 11:20:30.155 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-27 11:20:31.225 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:20:31.698 [http-nio-8080-exec-6] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 11:20:33.057 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-27 11:20:34.167 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-27 11:20:35.196 [http-nio-8080-exec-9] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:20:36.145 [http-nio-8080-exec-10] INFO  com.lgq.controller.UserController - FrancisBlog: getAllUser
+2019-12-27 11:20:40.615 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:20:41.255 [http-nio-8080-exec-2] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 11:20:41.998 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-27 11:20:42.167 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-27 11:20:42.953 [http-nio-8080-exec-5] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:20:43.883 [http-nio-8080-exec-6] INFO  com.lgq.controller.UserController - FrancisBlog: getAllUser
+2019-12-27 11:20:47.666 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 11:20:48.646 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-27 11:20:49.605 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-27 11:20:50.635 [http-nio-8080-exec-10] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 11:21:04.523 [http-nio-8080-exec-2] INFO  com.lgq.controller.TagController - FrancisBlog: updateTag -> {"tagAlias":"b","tagColor":"red","tagDescription":"java","tagId":1,"tagName":"Java"}
+2019-12-27 11:21:04.553 [http-nio-8080-exec-3] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 11:21:21.634 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-27 11:21:22.783 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:21:31.232 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(199, 21, 133, 1)","siteTagDescription":"a","siteTagId":5,"siteTagName":"q"}
+2019-12-27 11:21:31.452 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:21:39.810 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(199, 21, 133, 1)","siteTagDescription":"aaaaaaa","siteTagId":6,"siteTagName":"aaaaaa"}
+2019-12-27 11:21:39.840 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:21:50.514 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(144, 238, 144, 1)","siteTagDescription":"a","siteTagId":5,"siteTagName":"q"}
+2019-12-27 11:21:50.724 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:21:58.256 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(144, 238, 144, 1)","siteTagDescription":"a","siteTagId":5,"siteTagName":"q"}
+2019-12-27 11:21:58.276 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:22:05.965 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(30, 144, 255, 1)","siteTagDescription":"aaaaaaa","siteTagId":6,"siteTagName":"aaaaaa"}
+2019-12-27 11:22:06.155 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:22:29.953 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(255, 215, 0, 1)","siteTagDescription":"a","siteTagId":5,"siteTagName":"q"}
+2019-12-27 11:22:30.143 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:22:37.944 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(255, 215, 0, 1)","siteTagDescription":"a","siteTagId":5,"siteTagName":"q"}
+2019-12-27 11:22:37.964 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:22:49.435 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(30, 144, 255, 1)","siteTagDescription":"a","siteTagId":5,"siteTagName":"q"}
+2019-12-27 11:22:49.684 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:22:55.971 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(30, 144, 255, 1)","siteTagDescription":"a","siteTagId":5,"siteTagName":"q"}
+2019-12-27 11:22:55.991 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:23:08.507 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(199, 21, 133, 1)","siteTagDescription":"a","siteTagId":5,"siteTagName":"q"}
+2019-12-27 11:23:08.687 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:23:09.277 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(199, 21, 133, 1)","siteTagDescription":"a","siteTagId":5,"siteTagName":"q"}
+2019-12-27 11:23:09.297 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:23:26.993 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(255, 140, 0, 1)","siteTagDescription":"a","siteTagId":5,"siteTagName":"q"}
+2019-12-27 11:23:27.653 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:23:38.357 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(30, 144, 255, 1)","siteTagDescription":"a","siteTagId":5,"siteTagName":"q"}
+2019-12-27 11:23:38.547 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:23:47.528 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(255, 69, 0, 1)","siteTagDescription":"a","siteTagId":5,"siteTagName":"q"}
+2019-12-27 11:23:47.708 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:23:57.819 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteTagController - FrancisBlog: updateSiteTag -> {"siteTagColor":"rgba(255, 221, 30, 1)","siteTagDescription":"aaaaaaa","siteTagId":6,"siteTagName":"aaaaaa"}
+2019-12-27 11:23:58.059 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:24:02.520 [http-nio-8080-exec-7] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 11:24:02.990 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-27 11:24:03.789 [http-nio-8080-exec-9] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 11:24:09.649 [http-nio-8080-exec-10] INFO  com.lgq.controller.TagController - FrancisBlog: updateTag -> {"tagAlias":"b","tagColor":"rgba(30, 144, 255, 1)","tagDescription":"java","tagId":1,"tagName":"Java"}
+2019-12-27 11:24:09.899 [http-nio-8080-exec-1] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 11:24:17.987 [http-nio-8080-exec-2] INFO  com.lgq.controller.TagController - FrancisBlog: updateTag -> {"tagAlias":"a","tagColor":"rgba(144, 238, 144, 1)","tagDescription":"spring","tagId":2,"tagName":"Spring"}
+2019-12-27 11:24:18.097 [http-nio-8080-exec-3] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 11:45:11.918 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 3560 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 11:45:11.918 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 11:45:14.457 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 11:45:14.457 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 11:45:14.587 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96ms. Found 0 Redis repository interfaces.
+2019-12-27 11:45:15.127 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 11:45:15.666 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 11:45:15.686 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:45:15.696 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 11:45:15.696 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 11:45:15.696 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 11:45:15.696 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 11:45:15.696 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 11:45:15.706 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 11:45:16.846 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 11:45:17.046 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 11:45:17.046 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4898 ms
+2019-12-27 11:45:18.755 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 11:45:18.975 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 11:45:19.824 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 11:45:19.854 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 11:45:19.954 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 11:45:20.214 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 11:45:20.424 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:45:20.464 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 11:45:20.474 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 10.036 seconds (JVM running for 14.705)
+2019-12-27 11:46:33.277 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 11:46:33.277 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 11:46:33.297 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2019-12-27 11:46:33.587 [http-nio-8080-exec-2] INFO  com.lgq.controller.UserController - FrancisBlog: signIn -> {"userAccount":"1326338672","userPassword":"12345"}
+2019-12-27 11:46:33.687 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 11:46:37.300 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:46:39.139 [http-nio-8080-exec-4] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 11:46:40.858 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-27 11:46:41.588 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-27 11:46:42.307 [http-nio-8080-exec-7] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 11:48:55.317 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:48:56.107 [http-nio-8080-exec-10] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 11:48:58.995 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:48:59.755 [http-nio-8080-exec-2] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 11:50:28.722 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 11:51:09.742 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 16804 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 11:51:09.742 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 11:51:11.802 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 11:51:11.802 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 11:51:11.921 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94ms. Found 0 Redis repository interfaces.
+2019-12-27 11:51:12.440 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 11:51:12.880 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 11:51:12.900 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:51:12.900 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 11:51:12.900 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 11:51:12.900 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 11:51:12.900 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 11:51:12.900 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 11:51:12.900 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 11:51:14.177 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 11:51:14.433 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 11:51:14.433 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4509 ms
+2019-12-27 11:51:16.123 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 11:51:16.332 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 11:51:17.200 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 11:51:17.230 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 11:51:17.329 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 11:51:17.569 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 11:51:17.749 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:51:17.799 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 11:51:17.811 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 9.291 seconds (JVM running for 13.048)
+2019-12-27 11:52:45.983 [http-nio-8080-exec-10] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 11:52:45.983 [http-nio-8080-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 11:52:46.003 [http-nio-8080-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+2019-12-27 11:52:46.055 [http-nio-8080-exec-10] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogById: blog_id:1
+2019-12-27 11:52:46.151 [http-nio-8080-exec-10] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 11:53:20.669 [http-nio-8080-exec-9] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-27 11:54:28.368 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 9420 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 11:54:28.378 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 11:54:30.517 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 11:54:30.517 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 11:54:30.637 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92ms. Found 0 Redis repository interfaces.
+2019-12-27 11:54:31.147 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 11:54:31.606 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 11:54:31.626 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:54:31.626 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 11:54:31.626 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 11:54:31.626 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 11:54:31.626 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 11:54:31.626 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 11:54:31.626 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 11:54:32.766 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 11:54:32.956 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 11:54:32.956 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4358 ms
+2019-12-27 11:54:34.505 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 11:54:34.705 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 11:54:35.494 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 11:54:35.524 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 11:54:35.614 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 11:54:35.844 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 11:54:36.024 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:54:36.074 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 11:54:36.074 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 8.907 seconds (JVM running for 12.422)
+2019-12-27 11:54:54.601 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 11:54:54.601 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 11:54:54.613 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2019-12-27 11:54:54.669 [http-nio-8080-exec-1] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogById: blog_id:1
+2019-12-27 11:54:54.805 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited

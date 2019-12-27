@@ -26,6 +26,8 @@ public class BlogPreGetDTO {
 
     private Integer blogReply;
 
+    private String blogCover;
+
     private Boolean blogRecommend;
 
     private Integer blogCategoryId;

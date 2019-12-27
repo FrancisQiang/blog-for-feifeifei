@@ -44,5 +44,4 @@ public interface BlogMapper {
     BlogContentPreGetDTO getBlogContentById(Integer id);
 
     List<BlogGetByCategoryDTO> getBlogListByCategory(Integer id);
-
 }

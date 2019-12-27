@@ -35,4 +35,6 @@ public class BlogContentPreGetDTO {
 
     private String blogContent;
 
+    private String blogCover;
+
 }

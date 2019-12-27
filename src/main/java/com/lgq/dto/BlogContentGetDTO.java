@@ -36,5 +36,7 @@ public class BlogContentGetDTO {
 
     private String blogContent;
 
+    private String blogCover;
+
     private List<Tag> blogTags;
 }

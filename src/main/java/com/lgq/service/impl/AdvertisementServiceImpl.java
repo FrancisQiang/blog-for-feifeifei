@@ -48,7 +48,7 @@ public class AdvertisementServiceImpl implements AdvertisementService {
 
     @Override
     public String updateAdvertisementById(Advertisement advertisement) throws BlogException {
-        int row = advertisementMapper.updateByPrimaryKeySelective(advertisement);
+        int row = advertisementMapper.updateByPrimaryKey(advertisement);
         return CodeMessageUtil.updateMessage(row);
     }
 }

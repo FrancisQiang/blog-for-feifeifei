@@ -26,6 +26,8 @@ public class BlogGetDTO {
 
     private Integer blogViews;
 
+    private String blogCover;
+
     private Integer blogReply;
 
     private Boolean blogRecommend;
