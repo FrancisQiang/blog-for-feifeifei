@@ -1023,3 +1023,261 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2019-12-27 18:52:05.884 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
 2019-12-27 18:54:44.905 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 2019-12-27 18:54:45.024 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-12-27 18:55:04.869 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 7656 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 18:55:04.874 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 18:55:07.267 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 18:55:07.271 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 18:55:07.391 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94ms. Found 0 Redis repository interfaces.
+2019-12-27 18:55:07.952 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 18:55:08.422 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 18:55:08.439 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 18:55:08.440 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 18:55:08.441 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 18:55:08.443 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 18:55:08.444 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 18:55:08.444 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 18:55:08.445 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 18:55:09.632 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 18:55:09.866 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 18:55:09.867 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4785 ms
+2019-12-27 18:55:12.301 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 18:55:12.509 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 18:55:13.020 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 18:55:13.074 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 18:55:13.175 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 18:55:13.428 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 18:55:13.625 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 18:55:13.670 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 18:55:13.675 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 10.011 seconds (JVM running for 13.679)
+2019-12-27 18:55:15.453 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 18:55:15.454 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 18:55:15.469 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2019-12-27 18:55:15.506 [http-nio-8080-exec-1] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 18:55:15.635 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 18:55:59.886 [http-nio-8080-exec-3] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 18:57:05.545 [http-nio-8080-exec-6] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 18:59:08.657 [http-nio-8080-exec-9] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:00:46.689 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 2176 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 19:00:46.694 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 19:00:48.733 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 19:00:48.737 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 19:00:48.858 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94ms. Found 0 Redis repository interfaces.
+2019-12-27 19:00:49.383 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 19:00:49.843 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 19:00:49.858 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 19:00:49.860 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 19:00:49.861 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 19:00:49.863 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 19:00:49.864 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 19:00:49.864 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 19:00:49.865 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 19:00:51.002 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 19:00:51.192 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 19:00:51.193 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4308 ms
+2019-12-27 19:00:53.178 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 19:00:53.366 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 19:00:53.831 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 19:00:53.873 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 19:00:53.974 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 19:00:54.248 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 19:00:54.477 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 19:00:54.522 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 19:00:54.528 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 9.074 seconds (JVM running for 12.71)
+2019-12-27 19:00:55.002 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 19:00:55.003 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 19:00:55.017 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2019-12-27 19:00:55.078 [http-nio-8080-exec-1] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:00:55.208 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 19:00:55.731 [http-nio-8080-exec-2] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:01:11.172 [http-nio-8080-exec-4] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:01:34.486 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:02:45.671 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:02:49.518 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 19:02:49.717 [http-nio-8080-exec-9] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-12-27 19:02:49.720 [http-nio-8080-exec-9] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-12-27 19:02:53.808 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-11-27
+2019-12-27 19:03:15.223 [http-nio-8080-exec-10] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:03:45.736 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 13160 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 19:03:45.742 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 19:03:47.825 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 19:03:47.830 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 19:03:47.957 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 98ms. Found 0 Redis repository interfaces.
+2019-12-27 19:03:48.483 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 19:03:48.954 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 19:03:48.971 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 19:03:48.973 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 19:03:48.973 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 19:03:48.977 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 19:03:48.978 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 19:03:48.978 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 19:03:48.979 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 19:03:50.110 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 19:03:50.291 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 19:03:50.292 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4356 ms
+2019-12-27 19:03:52.270 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 19:03:52.461 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 19:03:52.907 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 19:03:52.939 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 19:03:53.026 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 19:03:53.271 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 19:03:53.463 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 19:03:53.508 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 19:03:53.512 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 8.996 seconds (JVM running for 12.563)
+2019-12-27 19:03:58.697 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 19:03:58.698 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 19:03:58.710 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2019-12-27 19:03:58.748 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 19:03:58.931 [http-nio-8080-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-12-27 19:03:58.933 [http-nio-8080-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-12-27 19:04:03.502 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX-2019-11-28
+2019-12-27 19:04:03.646 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 19:04:17.844 [http-nio-8080-exec-3] INFO  com.lgq.controller.UserController - FrancisBlog: getAllUser
+2019-12-27 19:04:19.577 [http-nio-8080-exec-4] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:05:34.203 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 16740 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 19:05:34.220 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 19:05:36.273 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 19:05:36.278 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 19:05:36.401 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96ms. Found 0 Redis repository interfaces.
+2019-12-27 19:05:36.936 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 19:05:37.408 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 19:05:37.424 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 19:05:37.425 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 19:05:37.426 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 19:05:37.429 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 19:05:37.429 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 19:05:37.429 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 19:05:37.430 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 19:05:38.592 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 19:05:38.785 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 19:05:38.787 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4400 ms
+2019-12-27 19:05:40.964 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 19:05:41.159 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 19:05:41.627 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 19:05:41.661 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 19:05:41.749 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 19:05:42.001 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 19:05:42.229 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 19:05:42.279 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 19:05:42.284 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 9.582 seconds (JVM running for 13.39)
+2019-12-27 19:05:47.046 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 19:05:47.047 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 19:05:47.060 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2019-12-27 19:05:47.102 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 19:05:47.469 [http-nio-8080-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-12-27 19:05:47.472 [http-nio-8080-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-12-27 19:05:51.938 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX-2019-12-27
+2019-12-27 19:05:52.063 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 19:07:43.631 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 11752 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 19:07:43.651 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 19:07:46.514 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 19:07:46.519 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 19:07:46.644 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96ms. Found 0 Redis repository interfaces.
+2019-12-27 19:07:47.198 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 19:07:47.673 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 19:07:47.689 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 19:07:47.691 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 19:07:47.691 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 19:07:47.695 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 19:07:47.695 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 19:07:47.696 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 19:07:47.696 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 19:07:48.831 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 19:07:49.021 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 19:07:49.022 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5199 ms
+2019-12-27 19:07:51.008 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 19:07:51.194 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 19:07:51.647 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 19:07:51.679 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 19:07:51.765 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 19:07:52.009 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 19:07:52.203 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 19:07:52.246 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 19:07:52.252 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 9.8 seconds (JVM running for 13.398)
+2019-12-27 19:09:03.678 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 19:09:03.679 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 19:09:03.692 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2019-12-27 19:09:03.730 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 19:09:03.913 [http-nio-8080-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-12-27 19:09:03.915 [http-nio-8080-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-12-27 19:27:55.855 [http-nio-8080-exec-6] INFO  com.lgq.controller.UserController - FrancisBlog: signIn -> {"userAccount":"2487049041","userPassword":"123456"}
+2019-12-27 19:27:55.905 [http-nio-8080-exec-6] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 19:27:58.669 [http-nio-8080-exec-7] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:29:06.482 [http-nio-8080-exec-9] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:29:36.581 [http-nio-8080-exec-10] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:30:01.627 [http-nio-8080-exec-2] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:31:05.609 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:46:33.827 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 6924 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 19:46:33.830 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 19:46:34.896 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 19:46:34.898 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 19:46:34.959 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48ms. Found 0 Redis repository interfaces.
+2019-12-27 19:46:35.230 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 19:46:35.475 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 19:46:35.484 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 19:46:35.485 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 19:46:35.485 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 19:46:35.487 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 19:46:35.487 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 19:46:35.487 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 19:46:35.487 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 19:46:36.552 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 19:46:36.649 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 19:46:36.649 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2764 ms
+2019-12-27 19:46:37.676 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 19:46:37.771 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 19:46:38.006 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 19:46:38.021 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 19:46:38.068 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 19:46:38.195 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 19:46:38.298 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 19:46:38.322 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 19:46:38.324 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 5.151 seconds (JVM running for 6.869)
+2019-12-27 19:46:52.264 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 19:46:52.264 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 19:46:52.272 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-12-27 19:46:52.291 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 19:46:52.383 [http-nio-8080-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-12-27 19:46:52.384 [http-nio-8080-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-12-27 19:47:45.802 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 6752 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 19:47:45.805 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 19:47:46.783 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 19:47:46.785 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 19:47:46.846 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47ms. Found 0 Redis repository interfaces.
+2019-12-27 19:47:47.123 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 19:47:47.361 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 19:47:47.369 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 19:47:47.370 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 19:47:47.371 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 19:47:47.372 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 19:47:47.372 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 19:47:47.373 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 19:47:47.373 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 19:47:48.448 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 19:47:48.542 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 19:47:48.543 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2654 ms
+2019-12-27 19:47:49.578 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 19:47:49.674 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 19:47:49.904 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 19:47:49.921 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 19:47:49.966 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 19:47:50.093 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 19:47:50.198 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 19:47:50.220 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 19:47:50.222 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 4.965 seconds (JVM running for 6.699)
+2019-12-27 19:47:56.839 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 19:47:56.839 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 19:47:56.846 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-12-27 19:47:56.866 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 19:47:56.952 [http-nio-8080-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-12-27 19:47:56.953 [http-nio-8080-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-12-27 19:47:59.065 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX-2019-12-27
+2019-12-27 19:47:59.130 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 19:48:40.860 [http-nio-8080-exec-3] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:49:06.020 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:49:52.497 [http-nio-8080-exec-6] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:50:09.102 [http-nio-8080-exec-7] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:51:34.301 [http-nio-8080-exec-1] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:52:22.110 [http-nio-8080-exec-2] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:52:43.241 [http-nio-8080-exec-3] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:52:58.944 [http-nio-8080-exec-4] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-27 19:56:51.343 [http-nio-8080-exec-6] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu

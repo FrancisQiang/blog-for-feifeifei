@@ -6,8 +6,10 @@ import com.lgq.domain.Site;
 import com.lgq.exception.BlogException;
 import com.lgq.service.SiteService;
 import com.lgq.util.CodeMessageUtil;
-import com.lgq.util.RedisService;
+import com.lgq.util.RedisUtil;
+import com.lgq.vo.SiteAndPageViewVO;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,27 +26,30 @@ public class SiteServiceImpl implements SiteService {
 
     private final SiteMapper siteMapper;
 
-    private final RedisService redisService;
+    private final RedisUtil redisUtil;
 
     @Autowired
     @SuppressWarnings("all")
-    public SiteServiceImpl(SiteMapper siteMapper, RedisService redisService) {
+    public SiteServiceImpl(SiteMapper siteMapper, RedisUtil redisUtil) {
         this.siteMapper = siteMapper;
-        this.redisService = redisService;
+        this.redisUtil = redisUtil;
     }
 
     @Override
-    public Site getSiteInfo() {
-        redisService.incr(Constants.RedisKey.TOTAL_PAGE_VIEW, 1);
+    public SiteAndPageViewVO getSiteInfo() {
+        Site site = siteMapper.selectByExample(null).get(0);
+        SiteAndPageViewVO siteAndPageViewVO = new SiteAndPageViewVO();
+        BeanUtils.copyProperties(site, siteAndPageViewVO);
+        siteAndPageViewVO.setTotalPageView(redisUtil.incr(Constants.RedisKey.TOTAL_PAGE_VIEW));
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(new Date());
         StringBuilder stringBuilder = new StringBuilder(Constants.RedisKey.DAY_PAGE_VIEW_PREFIX);
-        stringBuilder.append(calendar.get(Calendar.YEAR))
-                .append(calendar.get(Calendar.MONTH))
+        stringBuilder.append("-").append(calendar.get(Calendar.YEAR)).append("-")
+                .append(calendar.get(Calendar.MONTH) + 1).append("-")
                 .append(calendar.get(Calendar.DAY_OF_MONTH));
         log.info(stringBuilder.toString());
-        redisService.incr(stringBuilder.toString(), 1);
-        return siteMapper.selectByExample(null).get(0);
+        siteAndPageViewVO.setTodayPageView(redisUtil.incr(stringBuilder.toString()));
+        return siteAndPageViewVO;
     }
 
     @Override

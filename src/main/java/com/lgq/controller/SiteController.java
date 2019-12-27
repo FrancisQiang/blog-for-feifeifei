@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.lgq.domain.Site;
 import com.lgq.exception.BlogException;
 import com.lgq.service.SiteService;
+import com.lgq.vo.SiteAndPageViewVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -25,7 +26,7 @@ public class SiteController {
     }
 
     @RequestMapping(value = "/site", method = RequestMethod.GET)
-    public Site getSiteInfo() throws BlogException {
+    public SiteAndPageViewVO getSiteInfo() throws BlogException {
         log.info("FrancisBlog: getSiteInfo");
         return siteService.getSiteInfo();
     }

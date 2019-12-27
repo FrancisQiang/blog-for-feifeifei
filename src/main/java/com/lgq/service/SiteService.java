@@ -2,6 +2,7 @@ package com.lgq.service;
 
 import com.lgq.domain.Site;
 import com.lgq.exception.BlogException;
+import com.lgq.vo.SiteAndPageViewVO;
 
 /**
  * @author lgq
@@ -13,7 +14,7 @@ public interface SiteService {
      * 获取网站信息
      * @return 网站基本信息
      */
-    Site getSiteInfo();
+    SiteAndPageViewVO getSiteInfo();
 
     /**
      * 更新网站信息
