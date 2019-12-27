@@ -31,7 +31,7 @@ public class AlbumServiceImpl implements AlbumService {
     public String addAlbum(AlbumAddVO albumAddVO) throws BlogException {
         Album album = new Album();
         BeanUtils.copyProperties(albumAddVO, album);
-        int row = albumMapper.insertSelective(album);
+        int row = albumMapper.insert(album);
         return CodeMessageUtil.addMessage(row);
     }
 

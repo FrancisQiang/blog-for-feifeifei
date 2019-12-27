@@ -3,10 +3,7 @@ package com.lgq.controller;
 import com.alibaba.fastjson.JSON;
 import com.lgq.domain.Blog;
 import com.lgq.domain.BlogWithBLOBs;
-import com.lgq.dto.BlogContentGetDTO;
-import com.lgq.dto.BlogGetByCategoryDTO;
-import com.lgq.dto.BlogGetDTO;
-import com.lgq.dto.PageInfoDTO;
+import com.lgq.dto.*;
 import com.lgq.exception.BlogException;
 import com.lgq.service.BlogService;
 import com.lgq.vo.BlogAddVO;
@@ -15,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author lgq
@@ -69,6 +67,18 @@ public class BlogController {
     public String updateBlogById(@RequestBody BlogWithBLOBs blog) throws BlogException{
         log.info("FrancisBlog: updateBlogById -> {}", JSON.toJSONString(blog));
         return blogService.updateBlogById(blog);
+    }
+
+    @RequestMapping(value = "/blog/category_num", method = RequestMethod.GET)
+    public List<BlogCategoryNumDTO> getBlogCategoryNum() {
+        log.info("FrancisBlog: getBlogCategoryNum");
+        return blogService.getBlogCategoryNum();
+    }
+
+    @RequestMapping(value = "/blog/month_num", method = RequestMethod.GET)
+    public Map<String, Integer> getMonthNum() {
+        log.info("FrancisBlog: getDateNum");
+        return blogService.getMonthNum();
     }
 
 }

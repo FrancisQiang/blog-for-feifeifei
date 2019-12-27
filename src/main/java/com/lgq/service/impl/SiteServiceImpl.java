@@ -31,7 +31,8 @@ public class SiteServiceImpl implements SiteService {
 
     @Override
     public String updateSiteInfo(Site site) throws BlogException {
-        int row = siteMapper.updateByPrimaryKeySelective(site);
+        site.setSiteId(1);
+        int row = siteMapper.updateByPrimaryKey(site);
         return CodeMessageUtil.updateMessage(row);
     }
 }

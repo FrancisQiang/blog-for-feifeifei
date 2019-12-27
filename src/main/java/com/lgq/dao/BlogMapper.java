@@ -3,8 +3,11 @@ package com.lgq.dao;
 import com.lgq.domain.Blog;
 import com.lgq.domain.BlogExample;
 import com.lgq.domain.BlogWithBLOBs;
+
+import java.util.Date;
 import java.util.List;
 
+import com.lgq.dto.BlogCategoryNumDTO;
 import com.lgq.dto.BlogContentPreGetDTO;
 import com.lgq.dto.BlogGetByCategoryDTO;
 import com.lgq.dto.BlogPreGetDTO;
@@ -44,4 +47,8 @@ public interface BlogMapper {
     BlogContentPreGetDTO getBlogContentById(Integer id);
 
     List<BlogGetByCategoryDTO> getBlogListByCategory(Integer id);
+
+    List<BlogCategoryNumDTO> getBlogCategoryNum();
+
+    List<Date> selectCreateTimeList();
 }

@@ -5,6 +5,10 @@
         <id column="blog_id" jdbcType="INTEGER" property="blogId"/>
         <result column="blog_title" jdbcType="VARCHAR" property="blogTitle"/>
     </resultMap>
+    <resultMap id="BlogCategoryNumDTO" type="com.lgq.dto.BlogCategoryNumDTO">
+        <result column="category_name" jdbcType="VARCHAR" property="categoryName"/>
+        <result column="num" jdbcType="INTEGER" property="num"/>
+    </resultMap>
     <resultMap id="BlogGetPreDTO" type="com.lgq.dto.BlogPreGetDTO">
         <id column="blog_id" jdbcType="INTEGER" property="blogId"/>
         <result column="blog_create_time" jdbcType="TIMESTAMP" property="blogCreateTime"/>
@@ -30,7 +34,7 @@
         <result column="blog_category_id" jdbcType="INTEGER" property="blogCategoryId"/>
         <result column="category_name" jdbcType="INTEGER" property="blogCategoryName"/>
         <result column="blog_content" jdbcType="LONGVARCHAR" property="blogContent"/>
-        <result column="blog_cover" jdbcType="VARCHAR" property="blogCover" />
+        <result column="blog_cover" jdbcType="VARCHAR" property="blogCover"/>
     </resultMap>
     <resultMap id="BaseResultMap" type="com.lgq.domain.Blog">
         <id column="blog_id" jdbcType="INTEGER" property="blogId"/>
@@ -415,7 +419,7 @@
              , blog_category_id
              , category_name
              , blog_summary
-        , blog_cover
+             , blog_cover
         from blog,
              category
         where blog_category_id = category_id
@@ -438,11 +442,19 @@
              , blog_category_id
              , category_name
              , blog_content
-        ,blog_cover
+             , blog_cover
         from blog,
              category
         where blog_category_id = category_id
           and blog_delete_flag = 0
           and blog_id = #{id}
     </select>
+    <select id="getBlogCategoryNum" resultMap="BlogCategoryNumDTO">
+        select category_name,count(*) as num from blog,category where category_id = blog_category_id GROUP BY category_id;
+    </select>
+
+    <select id="selectCreateTimeList" resultType="java.util.Date">
+        select blog_create_time from blog;
+    </select>
+
 </mapper>

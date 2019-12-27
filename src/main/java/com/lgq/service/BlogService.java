@@ -1,14 +1,12 @@
 package com.lgq.service;
 
 import com.lgq.domain.BlogWithBLOBs;
-import com.lgq.dto.BlogContentGetDTO;
-import com.lgq.dto.BlogGetByCategoryDTO;
-import com.lgq.dto.BlogGetDTO;
-import com.lgq.dto.PageInfoDTO;
+import com.lgq.dto.*;
 import com.lgq.exception.BlogException;
 import com.lgq.vo.BlogAddVO;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author lgq
@@ -60,4 +58,16 @@ public interface BlogService {
      * @throws BlogException 异常
      */
     String updateBlogById(BlogWithBLOBs blog)throws BlogException;
+
+    /**
+     * 获取所有分类的相应博客数量
+     * @return 返回博客数量
+     */
+    List<BlogCategoryNumDTO> getBlogCategoryNum();
+
+    /**
+     * 获取每月的文章数量
+     * @return 每月文章数量
+     */
+    Map<String, Integer> getMonthNum();
 }

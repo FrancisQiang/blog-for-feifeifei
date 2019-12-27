@@ -18,9 +18,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author lgq
@@ -127,5 +125,28 @@ public class BlogServiceImpl implements BlogService {
     public String updateBlogById(BlogWithBLOBs blog) throws BlogException {
         int row = blogMapper.updateByPrimaryKeyWithBLOBs(blog);
         return CodeMessageUtil.updateMessage(row);
+    }
+
+    @Override
+    public List<BlogCategoryNumDTO> getBlogCategoryNum() {
+        return blogMapper.getBlogCategoryNum();
+    }
+
+    @Override
+    public Map<String, Integer> getMonthNum() {
+        List<Date> createTimeList = blogMapper.selectCreateTimeList();
+        String[] monthList = new String[]{"Jan", "Feb", "Mar", "Apr", "May","Jun"
+        ,"Jul", "Aug", "Sept", "Oct", "Nov", "Dec"};
+        Map<String, Integer> returnMap = new HashMap<>(12);
+        for (String key: monthList) {
+            returnMap.put(key, 0);
+        }
+        for (Date dateItem : createTimeList) {
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(dateItem);
+            int month = cal.get(Calendar.MONTH);
+            returnMap.put(monthList[month - 1], returnMap.get(monthList[month - 1]) + 1);
+        }
+        return returnMap;
     }
 }
