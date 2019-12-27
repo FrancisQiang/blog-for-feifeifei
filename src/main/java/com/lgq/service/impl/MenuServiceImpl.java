@@ -43,10 +43,10 @@ public class MenuServiceImpl implements MenuService {
         List<Menu> allMenu = menuMapper.selectByExample(null);
         List<MenuListDTO> menuListDTO = new ArrayList<>();
         for (Menu item : allMenu) {
-            if (item.getMenuId() == 0) {
+            if (item.getMenuPid() == 0) {
                 MenuListDTO mld = new MenuListDTO();
                 mld.setChildMenu(new ArrayList<>());
-                BeanUtils.copyProperties(item, menuListDTO);
+                BeanUtils.copyProperties(item, mld);
                 for (Menu subItem : allMenu) {
                     if (subItem.getMenuPid().equals(item.getMenuId())) {
                         mld.getChildMenu().add(subItem);
