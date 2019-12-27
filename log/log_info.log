@@ -756,3 +756,78 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2019-12-27 15:18:10.790 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: updateSiteInfo -> {"siteAvatar":"http://img.francisqiang.top/1577430809","siteDescription":"肥肥肥超级肥肥肥","siteLogo":"http://img.francisqiang.top/1577430809","siteSubtitle":"肥肥肉肥肥","siteTitile":"肥肥肥00"}
 2019-12-27 15:18:10.820 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
 2019-12-27 15:18:14.353 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:19:25.734 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 13948 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 15:19:25.737 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 15:19:26.720 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 15:19:26.725 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 15:19:26.786 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47ms. Found 0 Redis repository interfaces.
+2019-12-27 15:19:27.063 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 15:19:27.304 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 15:19:27.311 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 15:19:27.312 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 15:19:27.312 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 15:19:27.314 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 15:19:27.314 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 15:19:27.314 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 15:19:27.315 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 15:19:28.386 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 15:19:28.488 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 15:19:28.489 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2661 ms
+2019-12-27 15:19:29.541 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 15:19:29.639 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 15:19:29.872 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 15:19:29.889 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 15:19:29.938 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 15:19:30.066 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 15:19:30.166 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 15:19:30.197 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 15:19:30.200 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 5.038 seconds (JVM running for 6.757)
+2019-12-27 15:19:40.078 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 15:19:40.079 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-27 15:19:40.087 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-12-27 15:19:40.204 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: updateSiteInfo -> {"siteAvatar":"http://img.francisqiang.top/1577430809","siteDescription":"肥肥肥超级肥肥肥","siteLogo":"http://img.francisqiang.top/1577430809","siteSubtitle":"肥肥肉肥肥","siteTitile":"肥肥肥"}
+2019-12-27 15:19:40.252 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-27 15:19:40.604 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:20:51.849 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:21:03.384 [http-nio-8080-exec-5] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:21:04.596 [http-nio-8080-exec-6] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:21:15.074 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: updateSiteInfo -> {"siteAvatar":"","siteDescription":"肥肥肥超级肥肥肥","siteLogo":"","siteSubtitle":"肥肥肉肥肥","siteTitile":"肥肥肥的blog"}
+2019-12-27 15:21:15.262 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:21:21.938 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:21:29.407 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:21:30.597 [http-nio-8080-exec-1] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:21:30.606 [http-nio-8080-exec-2] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:24:14.606 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:24:16.151 [http-nio-8080-exec-5] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:24:16.162 [http-nio-8080-exec-6] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:24:46.126 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: updateSiteInfo -> {"siteAvatar":"","siteDescription":"肥肥肥超级肥肥肥","siteLogo":"http://img.francisqiang.top/1577431457","siteSubtitle":"肥肥肉肥肥","siteTitile":"肥肥肥的blog"}
+2019-12-27 15:24:46.497 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:25:22.038 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:25:23.549 [http-nio-8080-exec-1] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:25:23.562 [http-nio-8080-exec-2] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:25:30.280 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: updateSiteInfo -> {"siteAvatar":"http://img.francisqiang.top/1577431525","siteDescription":"肥肥肥超级肥肥肥","siteLogo":"","siteSubtitle":"肥肥肉肥肥","siteTitile":"肥肥肥的blog"}
+2019-12-27 15:25:30.959 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:26:11.554 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:26:13.898 [http-nio-8080-exec-6] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 15:26:15.079 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-27 15:26:15.686 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 15:26:16.251 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:26:18.569 [http-nio-8080-exec-10] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 15:26:19.204 [http-nio-8080-exec-1] INFO  com.lgq.controller.AlbumController - FrancisBlog: getAllAlbum
+2019-12-27 15:26:20.419 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:26:22.404 [http-nio-8080-exec-3] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:26:22.415 [http-nio-8080-exec-4] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:26:45.418 [http-nio-8080-exec-5] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-27 15:26:45.947 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-27 15:26:46.546 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:26:48.210 [http-nio-8080-exec-8] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:26:48.229 [http-nio-8080-exec-9] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:27:04.351 [http-nio-8080-exec-10] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-27 15:27:04.838 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-27 15:27:06.254 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:27:08.339 [http-nio-8080-exec-3] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:27:08.352 [http-nio-8080-exec-4] INFO  com.lgq.controller.TokenController - FrancisBlog: getToken
+2019-12-27 15:27:15.349 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: updateSiteInfo -> {"siteAvatar":"","siteDescription":"肥肥肥超级肥肥肥","siteLogo":"http://img.francisqiang.top/1577431630","siteSubtitle":"肥肥肉肥肥","siteTitile":"肥肥肥的blog"}
+2019-12-27 15:27:15.600 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-27 15:33:48.622 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: updateSiteInfo -> {"siteAvatar":"","siteDescription":"肥肥肥超级肥肥肥","siteId":1,"siteLogo":"http://img.francisqiang.top/1577431630","siteSubtitle":"肥肥肉肥肥","siteTitile":"肥肥肥的blog"}
+2019-12-27 15:33:48.657 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
