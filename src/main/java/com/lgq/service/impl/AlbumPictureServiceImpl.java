@@ -2,6 +2,7 @@ package com.lgq.service.impl;
 
 import com.lgq.dao.AlbumPictureMapper;
 import com.lgq.domain.AlbumPicture;
+import com.lgq.dto.AlbumPictureGetDTO;
 import com.lgq.exception.BlogException;
 import com.lgq.service.AlbumPictureService;
 import com.lgq.util.CodeMessageUtil;
@@ -38,8 +39,8 @@ public class AlbumPictureServiceImpl implements AlbumPictureService {
     }
 
     @Override
-    public List<AlbumPicture> getAll() throws BlogException {
-        return albumPictureMapper.selectByExample(null);
+    public List<AlbumPictureGetDTO> getAll() throws BlogException {
+        return albumPictureMapper.getAlbumPictureGetDTOList();
     }
 
     @Override

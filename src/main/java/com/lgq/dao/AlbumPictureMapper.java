@@ -3,6 +3,8 @@ package com.lgq.dao;
 import com.lgq.domain.AlbumPicture;
 import com.lgq.domain.AlbumPictureExample;
 import java.util.List;
+
+import com.lgq.dto.AlbumPictureGetDTO;
 import org.apache.ibatis.annotations.Param;
 
 public interface AlbumPictureMapper {
@@ -27,4 +29,6 @@ public interface AlbumPictureMapper {
     int updateByPrimaryKeySelective(AlbumPicture record);
 
     int updateByPrimaryKey(AlbumPicture record);
+
+    List<AlbumPictureGetDTO> getAlbumPictureGetDTOList();
 }

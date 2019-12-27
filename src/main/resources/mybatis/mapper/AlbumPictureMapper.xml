@@ -8,6 +8,14 @@
     <result column="album_picture_name" jdbcType="VARCHAR" property="albumPictureName" />
     <result column="album_picture_description" jdbcType="VARCHAR" property="albumPictureDescription" />
   </resultMap>
+  <resultMap id="AlbumPictureGetDTO" type="com.lgq.dto.AlbumPictureGetDTO">
+    <id column="album_picture_id" jdbcType="INTEGER" property="albumPictureId" />
+    <result column="album_picture_url" jdbcType="VARCHAR" property="albumPictureUrl" />
+    <result column="album_picture_category" jdbcType="INTEGER" property="albumPictureCategory" />
+    <result column="album_picture_name" jdbcType="VARCHAR" property="albumPictureName" />
+    <result column="album_picture_description" jdbcType="VARCHAR" property="albumPictureDescription" />
+    <result column="album_name" jdbcType="VARCHAR" property="albumName" />
+  </resultMap>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -211,4 +219,8 @@
       album_picture_description = #{albumPictureDescription,jdbcType=VARCHAR}
     where album_picture_id = #{albumPictureId,jdbcType=INTEGER}
   </update>
+  <select id="getAlbumPictureGetDTOList" resultMap="AlbumPictureGetDTO">
+    select p.*, a.album_name from album_picture p,album a where a.album_id = p.album_picture_category
+  </select>
+
 </mapper>

@@ -74,7 +74,7 @@ public class MenuServiceImpl implements MenuService {
     public List<Menu> getAllParentMenu() {
         MenuExample menuExample = new MenuExample();
         MenuExample.Criteria criteria = menuExample.createCriteria();
-        criteria.andMenuIdEqualTo(0);
+        criteria.andMenuPidEqualTo(0);
         return menuMapper.selectByExample(menuExample);
     }
 }

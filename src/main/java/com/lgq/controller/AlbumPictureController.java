@@ -2,6 +2,7 @@ package com.lgq.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.lgq.domain.AlbumPicture;
+import com.lgq.dto.AlbumPictureGetDTO;
 import com.lgq.exception.BlogException;
 import com.lgq.service.AlbumPictureService;
 import com.lgq.service.AlbumService;
@@ -35,7 +36,7 @@ public class AlbumPictureController {
     }
 
     @RequestMapping(value = "/album_picture", method = RequestMethod.GET)
-    public List<AlbumPicture> getAllAlbum() throws BlogException {
+    public List<AlbumPictureGetDTO> getAllAlbum() throws BlogException {
         log.info("FrancisBlog: getAllAlbum");
         return albumPictureService.getAll();
     }

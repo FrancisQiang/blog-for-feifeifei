@@ -2,6 +2,7 @@ package com.lgq.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.lgq.constant.Constants;
 import com.lgq.dao.BlogMapper;
 import com.lgq.dao.BlogTagMapper;
 import com.lgq.dao.TagMapper;
@@ -13,10 +14,13 @@ import com.lgq.dto.*;
 import com.lgq.exception.BlogException;
 import com.lgq.service.BlogService;
 import com.lgq.util.CodeMessageUtil;
+import com.lgq.util.RedisUtil;
 import com.lgq.vo.BlogAddVO;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 
@@ -25,18 +29,22 @@ import java.util.*;
  * @date 2019/12/24
  */
 @Service
+@Slf4j
 public class BlogServiceImpl implements BlogService {
 
     private final BlogMapper blogMapper;
     private final TagMapper tagMapper;
     private final BlogTagMapper blogTagMapper;
+    private final RedisUtil redisUtil;
 
     @Autowired
     @SuppressWarnings("all")
-    public BlogServiceImpl(BlogMapper blogMapper, TagMapper tagMapper, BlogTagMapper blogTagMapper) {
+    public BlogServiceImpl(BlogMapper blogMapper, TagMapper tagMapper, BlogTagMapper blogTagMapper,
+                           RedisUtil redisUtil) {
         this.blogMapper = blogMapper;
         this.tagMapper = tagMapper;
         this.blogTagMapper = blogTagMapper;
+        this.redisUtil = redisUtil;
     }
 
     @Override
@@ -102,8 +110,21 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
+    @Transactional(rollbackForClassName = "Exception.class")
     public BlogContentGetDTO getBlogById(Integer blogId) {
+        redisUtil.incr(Constants.RedisKey.TOTAL_PAGE_VIEW);
         BlogContentPreGetDTO blogContentPreGetDTO = blogMapper.getBlogContentById(blogId);
+        Long viewValue = redisUtil.hincr(Constants.RedisKey.BLOG_VIEW_MAP, blogId.toString(), 1);
+        log.info(redisUtil.getString(Constants.RedisKey.EXPIRE_FLAG));
+        if (redisUtil.getString(Constants.RedisKey.EXPIRE_FLAG) == null) {
+            long currentTimeMillis = System.currentTimeMillis();
+            redisUtil.set(Constants.RedisKey.EXPIRE_FLAG, currentTimeMillis, 10);
+            BlogWithBLOBs blogWithBLOBs = new BlogWithBLOBs();
+            blogWithBLOBs.setBlogId(blogId);
+            blogWithBLOBs.setBlogViews(viewValue.intValue());
+            blogMapper.updateByPrimaryKeySelective(blogWithBLOBs);
+        }
+        log.info(viewValue.toString());
         List<BlogTag> blogTags = blogTagMapper.selectByExample(null);
         List<Tag> tags = tagMapper.selectByExample(null);
         BlogContentGetDTO blogContentGetDTO = new BlogContentGetDTO();

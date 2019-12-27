@@ -2,6 +2,7 @@ package com.lgq.util;
 
 import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
@@ -29,6 +30,11 @@ public class RedisUtil {
     public RedisUtil(StringRedisTemplate stringRedisTemplate, RedisTemplate redisTemplate){
         this.stringRedisTemplate = stringRedisTemplate;
         this.redisTemplate = redisTemplate;
+    }
+
+    public Long hincr(String key, String hashKey, Object value) {
+        HashOperations hashOperations = redisTemplate.opsForHash();
+        return hashOperations.increment(key, hashKey, 1);
     }
 
     /**

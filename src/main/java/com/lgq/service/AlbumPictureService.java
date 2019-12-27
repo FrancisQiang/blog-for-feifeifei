@@ -1,6 +1,7 @@
 package com.lgq.service;
 
 import com.lgq.domain.AlbumPicture;
+import com.lgq.dto.AlbumPictureGetDTO;
 import com.lgq.exception.BlogException;
 import com.lgq.vo.AlbumPictureAddVO;
 
@@ -24,7 +25,7 @@ public interface AlbumPictureService {
      * @return 图片列表
      * @throws BlogException 异常
      */
-    List<AlbumPicture> getAll() throws BlogException;
+    List<AlbumPictureGetDTO> getAll() throws BlogException;
 
     /**
      * 删除指定照片

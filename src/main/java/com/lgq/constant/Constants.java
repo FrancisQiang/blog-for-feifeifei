@@ -27,6 +27,8 @@ public class Constants {
     public static class RedisKey {
         public static final String TOTAL_PAGE_VIEW = "TOTAL_PAGE_VIEW";
         public static final String DAY_PAGE_VIEW_PREFIX = "DAY_PAGE_VIEW_PREFIX";
+        public static final String BLOG_VIEW_MAP = "BLOG_VIEW_MAP";
+        public static final String EXPIRE_FLAG = "EXPIRE_FLAG";
     }
 
 }
