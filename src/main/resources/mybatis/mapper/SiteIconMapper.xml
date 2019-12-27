@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lgq.dao.SiteIconMapper">
+  <resultMap id="BaseResultMap" type="com.lgq.domain.SiteIcon">
+    <id column="site_icon_id" jdbcType="INTEGER" property="siteIconId" />
+    <result column="site_icon_name" jdbcType="VARCHAR" property="siteIconName" />
+    <result column="site_icon_color" jdbcType="VARCHAR" property="siteIconColor" />
+    <result column="site_icon_url" jdbcType="VARCHAR" property="siteIconUrl" />
+    <result column="site_icon_value" jdbcType="VARCHAR" property="siteIconValue" />
+    <result column="site_icon_description" jdbcType="VARCHAR" property="siteIconDescription" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    site_icon_id, site_icon_name, site_icon_color, site_icon_url, site_icon_value, site_icon_description
+  </sql>
+  <select id="selectByExample" parameterType="com.lgq.domain.SiteIconExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from site_icon
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from site_icon
+    where site_icon_id = #{siteIconId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from site_icon
+    where site_icon_id = #{siteIconId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.lgq.domain.SiteIconExample">
+    delete from site_icon
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.lgq.domain.SiteIcon">
+    insert into site_icon (site_icon_id, site_icon_name, site_icon_color, 
+      site_icon_url, site_icon_value, site_icon_description
+      )
+    values (#{siteIconId,jdbcType=INTEGER}, #{siteIconName,jdbcType=VARCHAR}, #{siteIconColor,jdbcType=VARCHAR}, 
+      #{siteIconUrl,jdbcType=VARCHAR}, #{siteIconValue,jdbcType=VARCHAR}, #{siteIconDescription,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.lgq.domain.SiteIcon">
+    insert into site_icon
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="siteIconId != null">
+        site_icon_id,
+      </if>
+      <if test="siteIconName != null">
+        site_icon_name,
+      </if>
+      <if test="siteIconColor != null">
+        site_icon_color,
+      </if>
+      <if test="siteIconUrl != null">
+        site_icon_url,
+      </if>
+      <if test="siteIconValue != null">
+        site_icon_value,
+      </if>
+      <if test="siteIconDescription != null">
+        site_icon_description,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="siteIconId != null">
+        #{siteIconId,jdbcType=INTEGER},
+      </if>
+      <if test="siteIconName != null">
+        #{siteIconName,jdbcType=VARCHAR},
+      </if>
+      <if test="siteIconColor != null">
+        #{siteIconColor,jdbcType=VARCHAR},
+      </if>
+      <if test="siteIconUrl != null">
+        #{siteIconUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="siteIconValue != null">
+        #{siteIconValue,jdbcType=VARCHAR},
+      </if>
+      <if test="siteIconDescription != null">
+        #{siteIconDescription,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.lgq.domain.SiteIconExample" resultType="java.lang.Long">
+    select count(*) from site_icon
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update site_icon
+    <set>
+      <if test="record.siteIconId != null">
+        site_icon_id = #{record.siteIconId,jdbcType=INTEGER},
+      </if>
+      <if test="record.siteIconName != null">
+        site_icon_name = #{record.siteIconName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.siteIconColor != null">
+        site_icon_color = #{record.siteIconColor,jdbcType=VARCHAR},
+      </if>
+      <if test="record.siteIconUrl != null">
+        site_icon_url = #{record.siteIconUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="record.siteIconValue != null">
+        site_icon_value = #{record.siteIconValue,jdbcType=VARCHAR},
+      </if>
+      <if test="record.siteIconDescription != null">
+        site_icon_description = #{record.siteIconDescription,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update site_icon
+    set site_icon_id = #{record.siteIconId,jdbcType=INTEGER},
+      site_icon_name = #{record.siteIconName,jdbcType=VARCHAR},
+      site_icon_color = #{record.siteIconColor,jdbcType=VARCHAR},
+      site_icon_url = #{record.siteIconUrl,jdbcType=VARCHAR},
+      site_icon_value = #{record.siteIconValue,jdbcType=VARCHAR},
+      site_icon_description = #{record.siteIconDescription,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lgq.domain.SiteIcon">
+    update site_icon
+    <set>
+      <if test="siteIconName != null">
+        site_icon_name = #{siteIconName,jdbcType=VARCHAR},
+      </if>
+      <if test="siteIconColor != null">
+        site_icon_color = #{siteIconColor,jdbcType=VARCHAR},
+      </if>
+      <if test="siteIconUrl != null">
+        site_icon_url = #{siteIconUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="siteIconValue != null">
+        site_icon_value = #{siteIconValue,jdbcType=VARCHAR},
+      </if>
+      <if test="siteIconDescription != null">
+        site_icon_description = #{siteIconDescription,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where site_icon_id = #{siteIconId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lgq.domain.SiteIcon">
+    update site_icon
+    set site_icon_name = #{siteIconName,jdbcType=VARCHAR},
+      site_icon_color = #{siteIconColor,jdbcType=VARCHAR},
+      site_icon_url = #{siteIconUrl,jdbcType=VARCHAR},
+      site_icon_value = #{siteIconValue,jdbcType=VARCHAR},
+      site_icon_description = #{siteIconDescription,jdbcType=VARCHAR}
+    where site_icon_id = #{siteIconId,jdbcType=INTEGER}
+  </update>
+</mapper>

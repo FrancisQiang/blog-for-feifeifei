@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lgq.dao.SiteTagMapper">
+  <resultMap id="BaseResultMap" type="com.lgq.domain.SiteTag">
+    <id column="site_tag_id" jdbcType="INTEGER" property="siteTagId" />
+    <result column="site_tag_name" jdbcType="VARCHAR" property="siteTagName" />
+    <result column="site_tag_color" jdbcType="VARCHAR" property="siteTagColor" />
+    <result column="site_tag_description" jdbcType="VARCHAR" property="siteTagDescription" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    site_tag_id, site_tag_name, site_tag_color, site_tag_description
+  </sql>
+  <select id="selectByExample" parameterType="com.lgq.domain.SiteTagExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from site_tag
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from site_tag
+    where site_tag_id = #{siteTagId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from site_tag
+    where site_tag_id = #{siteTagId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.lgq.domain.SiteTagExample">
+    delete from site_tag
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.lgq.domain.SiteTag">
+    insert into site_tag (site_tag_id, site_tag_name, site_tag_color, 
+      site_tag_description)
+    values (#{siteTagId,jdbcType=INTEGER}, #{siteTagName,jdbcType=VARCHAR}, #{siteTagColor,jdbcType=VARCHAR}, 
+      #{siteTagDescription,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.lgq.domain.SiteTag">
+    insert into site_tag
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="siteTagId != null">
+        site_tag_id,
+      </if>
+      <if test="siteTagName != null">
+        site_tag_name,
+      </if>
+      <if test="siteTagColor != null">
+        site_tag_color,
+      </if>
+      <if test="siteTagDescription != null">
+        site_tag_description,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="siteTagId != null">
+        #{siteTagId,jdbcType=INTEGER},
+      </if>
+      <if test="siteTagName != null">
+        #{siteTagName,jdbcType=VARCHAR},
+      </if>
+      <if test="siteTagColor != null">
+        #{siteTagColor,jdbcType=VARCHAR},
+      </if>
+      <if test="siteTagDescription != null">
+        #{siteTagDescription,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.lgq.domain.SiteTagExample" resultType="java.lang.Long">
+    select count(*) from site_tag
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update site_tag
+    <set>
+      <if test="record.siteTagId != null">
+        site_tag_id = #{record.siteTagId,jdbcType=INTEGER},
+      </if>
+      <if test="record.siteTagName != null">
+        site_tag_name = #{record.siteTagName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.siteTagColor != null">
+        site_tag_color = #{record.siteTagColor,jdbcType=VARCHAR},
+      </if>
+      <if test="record.siteTagDescription != null">
+        site_tag_description = #{record.siteTagDescription,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update site_tag
+    set site_tag_id = #{record.siteTagId,jdbcType=INTEGER},
+      site_tag_name = #{record.siteTagName,jdbcType=VARCHAR},
+      site_tag_color = #{record.siteTagColor,jdbcType=VARCHAR},
+      site_tag_description = #{record.siteTagDescription,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lgq.domain.SiteTag">
+    update site_tag
+    <set>
+      <if test="siteTagName != null">
+        site_tag_name = #{siteTagName,jdbcType=VARCHAR},
+      </if>
+      <if test="siteTagColor != null">
+        site_tag_color = #{siteTagColor,jdbcType=VARCHAR},
+      </if>
+      <if test="siteTagDescription != null">
+        site_tag_description = #{siteTagDescription,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where site_tag_id = #{siteTagId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lgq.domain.SiteTag">
+    update site_tag
+    set site_tag_name = #{siteTagName,jdbcType=VARCHAR},
+      site_tag_color = #{siteTagColor,jdbcType=VARCHAR},
+      site_tag_description = #{siteTagDescription,jdbcType=VARCHAR}
+    where site_tag_id = #{siteTagId,jdbcType=INTEGER}
+  </update>
+</mapper>

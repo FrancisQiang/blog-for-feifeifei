@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lgq.dao.SiteFriendLinkMapper">
+  <resultMap id="BaseResultMap" type="com.lgq.domain.SiteFriendLink">
+    <id column="friend_link_id" jdbcType="INTEGER" property="friendLinkId" />
+    <result column="friend_link_name" jdbcType="VARCHAR" property="friendLinkName" />
+    <result column="friend_link_icon_value" jdbcType="VARCHAR" property="friendLinkIconValue" />
+    <result column="friend_link_icon_color" jdbcType="VARCHAR" property="friendLinkIconColor" />
+    <result column="friend_link_url" jdbcType="VARCHAR" property="friendLinkUrl" />
+    <result column="friend_link_description" jdbcType="VARCHAR" property="friendLinkDescription" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    friend_link_id, friend_link_name, friend_link_icon_value, friend_link_icon_color, 
+    friend_link_url, friend_link_description
+  </sql>
+  <select id="selectByExample" parameterType="com.lgq.domain.SiteFriendLinkExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from site_friend_link
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from site_friend_link
+    where friend_link_id = #{friendLinkId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from site_friend_link
+    where friend_link_id = #{friendLinkId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.lgq.domain.SiteFriendLinkExample">
+    delete from site_friend_link
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.lgq.domain.SiteFriendLink">
+    insert into site_friend_link (friend_link_id, friend_link_name, friend_link_icon_value, 
+      friend_link_icon_color, friend_link_url, friend_link_description
+      )
+    values (#{friendLinkId,jdbcType=INTEGER}, #{friendLinkName,jdbcType=VARCHAR}, #{friendLinkIconValue,jdbcType=VARCHAR}, 
+      #{friendLinkIconColor,jdbcType=VARCHAR}, #{friendLinkUrl,jdbcType=VARCHAR}, #{friendLinkDescription,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.lgq.domain.SiteFriendLink">
+    insert into site_friend_link
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="friendLinkId != null">
+        friend_link_id,
+      </if>
+      <if test="friendLinkName != null">
+        friend_link_name,
+      </if>
+      <if test="friendLinkIconValue != null">
+        friend_link_icon_value,
+      </if>
+      <if test="friendLinkIconColor != null">
+        friend_link_icon_color,
+      </if>
+      <if test="friendLinkUrl != null">
+        friend_link_url,
+      </if>
+      <if test="friendLinkDescription != null">
+        friend_link_description,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="friendLinkId != null">
+        #{friendLinkId,jdbcType=INTEGER},
+      </if>
+      <if test="friendLinkName != null">
+        #{friendLinkName,jdbcType=VARCHAR},
+      </if>
+      <if test="friendLinkIconValue != null">
+        #{friendLinkIconValue,jdbcType=VARCHAR},
+      </if>
+      <if test="friendLinkIconColor != null">
+        #{friendLinkIconColor,jdbcType=VARCHAR},
+      </if>
+      <if test="friendLinkUrl != null">
+        #{friendLinkUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="friendLinkDescription != null">
+        #{friendLinkDescription,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.lgq.domain.SiteFriendLinkExample" resultType="java.lang.Long">
+    select count(*) from site_friend_link
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update site_friend_link
+    <set>
+      <if test="record.friendLinkId != null">
+        friend_link_id = #{record.friendLinkId,jdbcType=INTEGER},
+      </if>
+      <if test="record.friendLinkName != null">
+        friend_link_name = #{record.friendLinkName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.friendLinkIconValue != null">
+        friend_link_icon_value = #{record.friendLinkIconValue,jdbcType=VARCHAR},
+      </if>
+      <if test="record.friendLinkIconColor != null">
+        friend_link_icon_color = #{record.friendLinkIconColor,jdbcType=VARCHAR},
+      </if>
+      <if test="record.friendLinkUrl != null">
+        friend_link_url = #{record.friendLinkUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="record.friendLinkDescription != null">
+        friend_link_description = #{record.friendLinkDescription,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update site_friend_link
+    set friend_link_id = #{record.friendLinkId,jdbcType=INTEGER},
+      friend_link_name = #{record.friendLinkName,jdbcType=VARCHAR},
+      friend_link_icon_value = #{record.friendLinkIconValue,jdbcType=VARCHAR},
+      friend_link_icon_color = #{record.friendLinkIconColor,jdbcType=VARCHAR},
+      friend_link_url = #{record.friendLinkUrl,jdbcType=VARCHAR},
+      friend_link_description = #{record.friendLinkDescription,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lgq.domain.SiteFriendLink">
+    update site_friend_link
+    <set>
+      <if test="friendLinkName != null">
+        friend_link_name = #{friendLinkName,jdbcType=VARCHAR},
+      </if>
+      <if test="friendLinkIconValue != null">
+        friend_link_icon_value = #{friendLinkIconValue,jdbcType=VARCHAR},
+      </if>
+      <if test="friendLinkIconColor != null">
+        friend_link_icon_color = #{friendLinkIconColor,jdbcType=VARCHAR},
+      </if>
+      <if test="friendLinkUrl != null">
+        friend_link_url = #{friendLinkUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="friendLinkDescription != null">
+        friend_link_description = #{friendLinkDescription,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where friend_link_id = #{friendLinkId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lgq.domain.SiteFriendLink">
+    update site_friend_link
+    set friend_link_name = #{friendLinkName,jdbcType=VARCHAR},
+      friend_link_icon_value = #{friendLinkIconValue,jdbcType=VARCHAR},
+      friend_link_icon_color = #{friendLinkIconColor,jdbcType=VARCHAR},
+      friend_link_url = #{friendLinkUrl,jdbcType=VARCHAR},
+      friend_link_description = #{friendLinkDescription,jdbcType=VARCHAR}
+    where friend_link_id = #{friendLinkId,jdbcType=INTEGER}
+  </update>
+</mapper>

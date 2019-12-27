@@ -1,0 +1,26 @@
+2019-12-27 10:33:24.482 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 1896 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-27 10:33:24.538 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-27 10:33:25.392 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 10:33:25.402 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 10:33:25.462 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50ms. Found 0 Redis repository interfaces.
+2019-12-27 10:33:25.781 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 10:33:26.021 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-27 10:33:26.031 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:33:26.031 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-27 10:33:26.031 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 10:33:26.041 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-27 10:33:26.041 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-27 10:33:26.041 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-27 10:33:26.041 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-27 10:33:27.121 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-27 10:33:27.401 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-27 10:33:27.401 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2818 ms
+2019-12-27 10:33:29.449 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-27 10:33:29.603 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 10:33:30.205 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-27 10:33:30.227 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-27 10:33:30.287 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-27 10:33:30.455 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-27 10:33:30.565 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:33:30.595 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-27 10:33:30.595 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 6.703 seconds (JVM running for 8.723)
