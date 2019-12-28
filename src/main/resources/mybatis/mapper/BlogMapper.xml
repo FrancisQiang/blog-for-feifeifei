@@ -426,6 +426,10 @@
           and blog_delete_flag = 0
     </select>
 
+    <select id="getBlogCount" resultType="java.lang.Long">
+        select count(*) from blog where blog_delete_flag = 0;
+    </select>
+
     <select id="getBlogListByCategory" resultMap="BlogGetByCategoryDTO" parameterType="java.lang.Integer">
         select blog_id, blog_title
         from blog

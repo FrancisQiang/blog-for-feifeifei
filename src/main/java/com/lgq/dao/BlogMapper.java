@@ -51,4 +51,6 @@ public interface BlogMapper {
     List<BlogCategoryNumDTO> getBlogCategoryNum();
 
     List<Date> selectCreateTimeList();
+
+    Long getBlogCount();
 }

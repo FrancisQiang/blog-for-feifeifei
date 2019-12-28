@@ -49,7 +49,7 @@ public class BlogCommentServiceImpl implements BlogCommentService {
         BlogComment blogComment = new BlogComment();
         blogComment.setBlogCommentId(blogCommentId);
         blogComment.setBlogCommentDeleteFlag(true);
-        int row = blogCommentMapper.updateByPrimaryKeyWithBLOBs(blogComment);
+        int row = blogCommentMapper.updateByPrimaryKeySelective(blogComment);
         return CodeMessageUtil.updateMessage(row);
     }
 }

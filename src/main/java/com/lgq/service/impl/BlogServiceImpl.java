@@ -36,6 +36,7 @@ public class BlogServiceImpl implements BlogService {
     private final TagMapper tagMapper;
     private final BlogTagMapper blogTagMapper;
     private final RedisUtil redisUtil;
+    private final int totalPageSize = 3;
 
     @Autowired
     @SuppressWarnings("all")
@@ -50,9 +51,10 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public String addBlog(BlogAddVO blogAddVO) throws BlogException {
         BlogWithBLOBs blogWithBLOBs = new BlogWithBLOBs();
-        blogWithBLOBs.setBlogUpdateTime(new Date(blogAddVO.getBlogCreateTime()));
+        Date date = new Date();
+        blogWithBLOBs.setBlogUpdateTime(date);
         blogWithBLOBs.setBlogSummary(blogAddVO.getBlogContent().substring(0, 150));
-        blogWithBLOBs.setBlogCreateTime(new Date(blogAddVO.getBlogCreateTime()));
+        blogWithBLOBs.setBlogCreateTime(date);
         blogWithBLOBs.setBlogTitle(blogAddVO.getBlogTitle());
         blogWithBLOBs.setBlogContent(blogAddVO.getBlogContent());
         blogWithBLOBs.setBlogCategoryId(blogAddVO.getBlogCategoryId());
@@ -63,10 +65,11 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public PageInfoDTO<BlogGetDTO> getBlogList(Integer pageIndex) {
-        PageHelper.startPage(pageIndex, 10);
-        List<BlogPreGetDTO> blogList = blogMapper.getBlogList();
+        Long totalPage = blogMapper.getBlogCount();
         List<BlogTag> blogTags = blogTagMapper.selectByExample(null);
         List<Tag> tags = tagMapper.selectByExample(null);
+        PageHelper.startPage(pageIndex, totalPageSize);
+        List<BlogPreGetDTO> blogList = blogMapper.getBlogList();
         List<BlogGetDTO> blogGetDTOS = new ArrayList<>();
         for (BlogPreGetDTO blogPreGetDTO : blogList) {
             BlogGetDTO blogGetDTO = new BlogGetDTO();
@@ -87,10 +90,23 @@ public class BlogServiceImpl implements BlogService {
         }
         PageInfo<BlogGetDTO> pageInfo = new PageInfo<>(blogGetDTOS);
         PageInfoDTO<BlogGetDTO> pageInfoDTO = new PageInfoDTO<>();
-        pageInfoDTO.setCurrentPage(pageInfo.getPageNum());
         pageInfoDTO.setSize(pageInfo.getSize());
         pageInfoDTO.setTotal(pageInfo.getTotal());
-        pageInfoDTO.setTotalPage(pageInfo.getPages());
+        int totalPageInt = 0;
+        if (totalPage % totalPageSize != 0) {
+            totalPageInt = totalPage.intValue() / totalPageSize + 1;
+            pageInfoDTO.setTotalPage(totalPageInt);
+        } else {
+            totalPageInt = totalPage.intValue() / totalPageSize;
+            pageInfoDTO.setTotalPage(totalPageInt);
+        }
+        if (pageIndex <= 0) {
+            pageInfoDTO.setCurrentPage(1);
+        } else if (pageIndex > totalPageInt) {
+            pageInfoDTO.setCurrentPage(totalPageInt);
+        } else {
+            pageInfoDTO.setCurrentPage(pageIndex);
+        }
         pageInfoDTO.setList(pageInfo.getList());
         return pageInfoDTO;
     }
@@ -156,10 +172,10 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Map<String, Integer> getMonthNum() {
         List<Date> createTimeList = blogMapper.selectCreateTimeList();
-        String[] monthList = new String[]{"Jan", "Feb", "Mar", "Apr", "May","Jun"
-        ,"Jul", "Aug", "Sept", "Oct", "Nov", "Dec"};
+        String[] monthList = new String[]{"Jan", "Feb", "Mar", "Apr", "May", "Jun"
+                , "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"};
         Map<String, Integer> returnMap = new HashMap<>(12);
-        for (String key: monthList) {
+        for (String key : monthList) {
             returnMap.put(key, 0);
         }
         for (Date dateItem : createTimeList) {

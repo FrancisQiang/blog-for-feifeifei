@@ -15,8 +15,6 @@ import java.util.Date;
 @NoArgsConstructor
 public class BlogAddVO {
 
-    private Integer blogCreateTime;
-
     private String blogTitle;
 
     private Integer blogCategoryId;
