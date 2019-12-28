@@ -53,7 +53,11 @@ public class BlogServiceImpl implements BlogService {
         BlogWithBLOBs blogWithBLOBs = new BlogWithBLOBs();
         Date date = new Date();
         blogWithBLOBs.setBlogUpdateTime(date);
-        blogWithBLOBs.setBlogSummary(blogAddVO.getBlogContent().substring(0, 150));
+        if (blogAddVO.getBlogContent().length() > 150) {
+            blogWithBLOBs.setBlogSummary(blogAddVO.getBlogContent().substring(0, 150));
+        } else {
+            blogWithBLOBs.setBlogSummary(blogAddVO.getBlogContent());
+        }
         blogWithBLOBs.setBlogCreateTime(date);
         blogWithBLOBs.setBlogTitle(blogAddVO.getBlogTitle());
         blogWithBLOBs.setBlogContent(blogAddVO.getBlogContent());
