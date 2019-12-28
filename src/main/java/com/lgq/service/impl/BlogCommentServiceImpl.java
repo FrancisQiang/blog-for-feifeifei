@@ -41,7 +41,7 @@ public class BlogCommentServiceImpl implements BlogCommentService {
         BlogCommentExample commentExample = new BlogCommentExample();
         BlogCommentExample.Criteria criteria = commentExample.createCriteria();
         criteria.andBlogCommentDeleteFlagEqualTo(false);
-        return blogCommentMapper.selectByExample(commentExample);
+        return blogCommentMapper.selectByExampleWithBLOBs(commentExample);
     }
 
     @Override

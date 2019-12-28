@@ -51,7 +51,7 @@ public class AlbumPictureServiceImpl implements AlbumPictureService {
 
     @Override
     public String updateAlbumPictureById(AlbumPicture albumPicture) throws BlogException {
-        int row = albumPictureMapper.updateByPrimaryKeySelective(albumPicture);
+        int row = albumPictureMapper.updateByPrimaryKey(albumPicture);
         return CodeMessageUtil.updateMessage(row);
     }
 }
