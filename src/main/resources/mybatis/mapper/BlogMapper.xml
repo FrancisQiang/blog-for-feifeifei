@@ -440,7 +440,7 @@
     </select>
 
     <select id="getBlogListByCategory" resultMap="BlogGetByCategoryDTO" parameterType="java.lang.Integer">
-        select blog_id, blog_title
+        select blog_id, blog_title, blog_create_time
         from blog
         where blog_category_id = #{id}
     </select>

@@ -183,7 +183,7 @@ public class BlogServiceImpl implements BlogService {
         for (Date dateItem : createTimeList) {
             Calendar cal = Calendar.getInstance();
             cal.setTime(dateItem);
-            int month = cal.get(Calendar.MONTH);
+            int month = cal.get(Calendar.MONTH) + 1;
             monthNumList.set(month - 1, monthNumList.get(month - 1) + 1);
         }
         return monthNumList;

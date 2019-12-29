@@ -57,6 +57,7 @@ public class AlbumPictureServiceImpl implements AlbumPictureService {
 
     @Override
     public List<AlbumPicture> getAlbumPictureByAlbumId(Integer albumId) {
+        System.out.println(albumPictureMapper.getAlbumPictureByAlbumId(albumId));
         return albumPictureMapper.getAlbumPictureByAlbumId(albumId);
     }
 }
