@@ -31,4 +31,7 @@ public interface AlbumPictureMapper {
     int updateByPrimaryKey(AlbumPicture record);
 
     List<AlbumPictureGetDTO> getAlbumPictureGetDTOList();
+
+    List<AlbumPicture> getAlbumPictureByAlbumId(Integer id);
+
 }

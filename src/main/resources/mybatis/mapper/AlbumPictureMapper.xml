@@ -223,4 +223,8 @@
     select p.*, a.album_name from album_picture p,album a where a.album_id = p.album_picture_category
   </select>
 
+  <select id="getAlbumPictureByAlbumId" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+    select * from album_picture where album_picture_category = #{id}
+  </select>
+
 </mapper>

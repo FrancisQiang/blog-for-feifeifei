@@ -17,4 +17,6 @@ public class BlogCategoryNumDTO {
 
     private Integer num;
 
+    private Integer view;
+
 }

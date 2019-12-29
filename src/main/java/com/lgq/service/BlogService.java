@@ -69,5 +69,5 @@ public interface BlogService {
      * 获取每月的文章数量
      * @return 每月文章数量
      */
-    Map<String, Integer> getMonthNum();
+    List<Integer> getMonthNum();
 }

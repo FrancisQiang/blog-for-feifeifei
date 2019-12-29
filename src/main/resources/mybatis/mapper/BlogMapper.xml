@@ -8,6 +8,7 @@
     <resultMap id="BlogCategoryNumDTO" type="com.lgq.dto.BlogCategoryNumDTO">
         <result column="category_name" jdbcType="VARCHAR" property="categoryName"/>
         <result column="num" jdbcType="INTEGER" property="num"/>
+        <result column="view" jdbcType="INTEGER" property="view"/>
     </resultMap>
     <resultMap id="BlogGetPreDTO" type="com.lgq.dto.BlogPreGetDTO">
         <id column="blog_id" jdbcType="INTEGER" property="blogId"/>
@@ -454,7 +455,7 @@
           and blog_id = #{id}
     </select>
     <select id="getBlogCategoryNum" resultMap="BlogCategoryNumDTO">
-        select category_name,count(*) as num from blog,category where category_id = blog_category_id GROUP BY category_id;
+        select category_name,count(*) as num,sum(blog_views) as view from blog,category where category_id = blog_category_id GROUP BY category_id;
     </select>
 
     <select id="selectCreateTimeList" resultType="java.util.Date">

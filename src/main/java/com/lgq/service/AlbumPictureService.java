@@ -42,4 +42,11 @@ public interface AlbumPictureService {
      * @throws BlogException 异常
      */
     String updateAlbumPictureById(AlbumPicture albumPicture) throws BlogException;
+
+    /**
+     * 获取指定相册的所有图片
+     * @param albumId 相册图片
+     * @return 图片列表
+     */
+    List<AlbumPicture> getAlbumPictureByAlbumId(Integer albumId);
 }

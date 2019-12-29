@@ -5,6 +5,7 @@ import com.lgq.domain.BlogComment;
 import com.lgq.exception.BlogException;
 import com.lgq.service.BlogCommentService;
 import com.lgq.vo.BlogCommentAddVO;
+import com.sun.org.apache.bcel.internal.generic.RETURN;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -43,6 +44,12 @@ public class BlogCommentController {
     public String deleteBlogComment(@PathVariable(value = "blog_comment_id")Integer blogCommentId) throws BlogException{
         log.info("FrancisBlog: deleteBlogComment" + blogCommentId);
         return blogCommentService.deleteBlogCommentById(blogCommentId);
+    }
+
+    @RequestMapping(value = "/latest_comment", method = RequestMethod.GET)
+    public List<BlogComment> getLatestComment() {
+        log.info("FrancisBlog: getLatestComment");
+        return blogCommentService.getLatestComment();
     }
 
 }

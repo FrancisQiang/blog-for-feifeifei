@@ -69,14 +69,14 @@ public class BlogController {
         return blogService.updateBlogById(blog);
     }
 
-    @RequestMapping(value = "/blog/category_num", method = RequestMethod.GET)
+    @RequestMapping(value = "/blog/category_pie", method = RequestMethod.GET)
     public List<BlogCategoryNumDTO> getBlogCategoryNum() {
         log.info("FrancisBlog: getBlogCategoryNum");
         return blogService.getBlogCategoryNum();
     }
 
     @RequestMapping(value = "/blog/month_num", method = RequestMethod.GET)
-    public Map<String, Integer> getMonthNum() {
+    public List<Integer> getMonthNum() {
         log.info("FrancisBlog: getDateNum");
         return blogService.getMonthNum();
     }

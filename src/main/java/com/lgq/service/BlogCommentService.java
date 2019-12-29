@@ -33,4 +33,10 @@ public interface BlogCommentService {
      * @throws BlogException 异常
      */
     String deleteBlogCommentById(Integer blogCommentId) throws BlogException;
+
+    /**
+     * 获取最新评论
+     * @return 最新评论列表
+     */
+    List<BlogComment> getLatestComment();
 }

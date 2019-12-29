@@ -54,4 +54,9 @@ public class AlbumPictureServiceImpl implements AlbumPictureService {
         int row = albumPictureMapper.updateByPrimaryKey(albumPicture);
         return CodeMessageUtil.updateMessage(row);
     }
+
+    @Override
+    public List<AlbumPicture> getAlbumPictureByAlbumId(Integer albumId) {
+        return albumPictureMapper.getAlbumPictureByAlbumId(albumId);
+    }
 }

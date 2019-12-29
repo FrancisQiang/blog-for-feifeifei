@@ -53,4 +53,10 @@ public class AlbumPictureController {
         return albumPictureService.updateAlbumPictureById(albumPicture);
     }
 
+    @RequestMapping(value = "/category_picture/{album_id}", method = RequestMethod.GET)
+    public List<AlbumPicture> getAlbumPictureByAlbumId(@PathVariable(value = "album_id")Integer albumId) {
+        log.info("FrancisBlog: getAlbumPictureByAlbumId: " + albumId);
+        return albumPictureService.getAlbumPictureByAlbumId(albumId);
+    }
+
 }

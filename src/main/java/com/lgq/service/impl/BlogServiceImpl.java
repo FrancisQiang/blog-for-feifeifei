@@ -174,20 +174,18 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
-    public Map<String, Integer> getMonthNum() {
+    public List<Integer> getMonthNum() {
         List<Date> createTimeList = blogMapper.selectCreateTimeList();
-        String[] monthList = new String[]{"Jan", "Feb", "Mar", "Apr", "May", "Jun"
-                , "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"};
-        Map<String, Integer> returnMap = new HashMap<>(12);
-        for (String key : monthList) {
-            returnMap.put(key, 0);
+        List<Integer> monthNumList = new ArrayList<>();
+        for (int i = 0; i < 12; i++) {
+            monthNumList.add(0);
         }
         for (Date dateItem : createTimeList) {
             Calendar cal = Calendar.getInstance();
             cal.setTime(dateItem);
             int month = cal.get(Calendar.MONTH);
-            returnMap.put(monthList[month - 1], returnMap.get(monthList[month - 1]) + 1);
+            monthNumList.set(month - 1, monthNumList.get(month - 1) + 1);
         }
-        return returnMap;
+        return monthNumList;
     }
 }

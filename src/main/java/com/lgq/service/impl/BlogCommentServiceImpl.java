@@ -52,4 +52,9 @@ public class BlogCommentServiceImpl implements BlogCommentService {
         int row = blogCommentMapper.updateByPrimaryKeySelective(blogComment);
         return CodeMessageUtil.updateMessage(row);
     }
+
+    @Override
+    public List<BlogComment> getLatestComment() {
+        return blogCommentMapper.getLatestComment();
+    }
 }
