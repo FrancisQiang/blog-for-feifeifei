@@ -287,4 +287,10 @@
       blog_comment_delete_flag = #{blogCommentDeleteFlag,jdbcType=BIT}
     where blog_comment_id = #{blogCommentId,jdbcType=INTEGER}
   </update>
+
+
+  <select id="getLatestComment" resultMap="ResultMapWithBLOBs">
+    select * from blog_comment order by blog_comment_date desc limit 10
+  </select>
+
 </mapper>

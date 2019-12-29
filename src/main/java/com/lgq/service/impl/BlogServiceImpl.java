@@ -188,4 +188,9 @@ public class BlogServiceImpl implements BlogService {
         }
         return monthNumList;
     }
+
+    @Override
+    public List<BlogViewNumDTO> getBlogViewNum() {
+        return blogMapper.getBlogViewNum();
+    }
 }

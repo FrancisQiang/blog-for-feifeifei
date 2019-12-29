@@ -7,10 +7,7 @@ import com.lgq.domain.BlogWithBLOBs;
 import java.util.Date;
 import java.util.List;
 
-import com.lgq.dto.BlogCategoryNumDTO;
-import com.lgq.dto.BlogContentPreGetDTO;
-import com.lgq.dto.BlogGetByCategoryDTO;
-import com.lgq.dto.BlogPreGetDTO;
+import com.lgq.dto.*;
 import org.apache.ibatis.annotations.Param;
 
 public interface BlogMapper {
@@ -53,4 +50,6 @@ public interface BlogMapper {
     List<Date> selectCreateTimeList();
 
     Long getBlogCount();
+
+    List<BlogViewNumDTO> getBlogViewNum();
 }

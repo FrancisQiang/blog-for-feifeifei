@@ -2410,3 +2410,1251 @@
 2019-12-29 19:38:51.887 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteViewTrend
 2019-12-29 19:38:51.887 [http-nio-8080-exec-1] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogCategoryNum
 2019-12-29 19:38:51.891 [http-nio-8080-exec-9] INFO  com.lgq.controller.BlogController - FrancisBlog: getDateNum
+2019-12-29 19:40:12.416 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 10192 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-29 19:40:12.419 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-29 19:40:13.623 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-29 19:40:13.626 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-29 19:40:13.698 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56ms. Found 0 repository interfaces.
+2019-12-29 19:40:13.998 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$863c32ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-29 19:40:14.316 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-29 19:40:14.328 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-29 19:40:14.337 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-29 19:40:14.337 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-29 19:40:14.344 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-12-29 19:40:14.344 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-29 19:40:14.344 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-29 19:40:14.344 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-29 19:40:15.431 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-29 19:40:15.542 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-29 19:40:15.543 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2990 ms
+2019-12-29 19:40:16.713 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-29 19:40:16.857 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-29 19:40:17.145 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-29 19:40:17.161 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-29 19:40:17.209 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-29 19:40:17.360 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-29 19:40:17.475 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-29 19:40:17.501 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-29 19:40:17.504 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 5.8 seconds (JVM running for 7.781)
+2019-12-29 19:40:24.030 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-29 19:40:24.031 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-29 19:40:24.039 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-12-29 19:40:24.067 [http-nio-8080-exec-1] INFO  com.lgq.controller.AlbumPictureController - FrancisBlog: getAlbumPictureByAlbumId: 1
+2019-12-29 19:40:24.126 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-29 19:40:29.204 [http-nio-8080-exec-3] INFO  com.lgq.controller.AlbumPictureController - FrancisBlog: getAlbumPictureByAlbumId: 2
+2019-12-29 19:40:31.992 [http-nio-8080-exec-4] INFO  com.lgq.controller.AlbumPictureController - FrancisBlog: getAlbumPictureByAlbumId: 3
+2019-12-29 19:40:34.939 [http-nio-8080-exec-6] INFO  com.lgq.controller.AlbumPictureController - FrancisBlog: getAlbumPictureByAlbumId: 4
+2019-12-29 19:40:37.389 [http-nio-8080-exec-5] INFO  com.lgq.controller.AlbumPictureController - FrancisBlog: getAlbumPictureByAlbumId: 6
+2019-12-29 19:49:22.654 [http-nio-8080-exec-10] INFO  com.lgq.controller.BlogController - FrancisBlog: getDateNum
+2019-12-29 19:49:22.655 [http-nio-8080-exec-9] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogCategoryNum
+2019-12-29 19:49:22.654 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteViewTrend
+2019-12-29 19:49:22.795 [http-nio-8080-exec-8] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-12-29 19:49:22.796 [http-nio-8080-exec-8] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-12-29 19:49:59.353 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:49:59.383 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:49:59.839 [http-nio-8080-exec-1] INFO  com.lgq.controller.AlbumController - FrancisBlog: getAllAlbum
+2019-12-29 19:50:00.419 [http-nio-8080-exec-3] INFO  com.lgq.controller.AlbumPictureController - FrancisBlog: getAllAlbum
+2019-12-29 19:50:00.419 [http-nio-8080-exec-4] INFO  com.lgq.controller.AlbumController - FrancisBlog: getAllAlbum
+2019-12-29 19:50:09.575 [http-nio-8080-exec-6] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 19:50:11.162 [http-nio-8080-exec-5] INFO  com.lgq.controller.UserController - FrancisBlog: getAllUser
+2019-12-29 19:50:12.395 [http-nio-8080-exec-7] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-29 19:50:13.311 [http-nio-8080-exec-10] INFO  com.lgq.controller.CategoryController - FrancisBlog: getAllCategory
+2019-12-29 19:50:13.874 [http-nio-8080-exec-9] INFO  com.lgq.controller.AlbumController - FrancisBlog: getAllAlbum
+2019-12-29 19:50:14.747 [http-nio-8080-exec-2] INFO  com.lgq.controller.AlbumController - FrancisBlog: getAllAlbum
+2019-12-29 19:50:14.748 [http-nio-8080-exec-8] INFO  com.lgq.controller.AlbumPictureController - FrancisBlog: getAllAlbum
+2019-12-29 19:50:15.131 [http-nio-8080-exec-1] INFO  com.lgq.controller.AlbumController - FrancisBlog: getAllAlbum
+2019-12-29 19:50:16.072 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:50:16.076 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:50:16.624 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 19:55:56.422 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:55:56.427 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:55:56.482 [http-nio-8080-exec-9] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 19:55:56.533 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:55:56.537 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:13.837 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:13.840 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:13.885 [http-nio-8080-exec-4] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 19:56:13.919 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 19:56:13.947 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 19:56:13.993 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:13.997 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:14.013 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 19:56:14.032 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 19:56:14.496 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:14.499 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:20.335 [http-nio-8080-exec-2] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 19:56:20.335 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:20.339 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 19:56:20.340 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 19:56:20.340 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:20.344 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 19:56:20.454 [http-nio-8080-exec-9] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 19:56:20.554 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:20.558 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:20.665 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:20.669 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:22.653 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:22.654 [http-nio-8080-exec-2] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 19:56:22.657 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:22.657 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 19:56:22.660 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 19:56:22.707 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 19:56:22.774 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 19:56:22.774 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:22.778 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:22.894 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:22.897 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:23.774 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:23.777 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:23.777 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 19:56:23.777 [http-nio-8080-exec-7] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 19:56:23.779 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 19:56:23.854 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 19:56:23.895 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:23.897 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:23.899 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 19:56:23.994 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:24.000 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:24.780 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 19:56:24.780 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 19:56:24.782 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:24.784 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 19:56:24.785 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:24.786 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 19:56:24.895 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:24.897 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:24.898 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 19:56:25.014 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:25.017 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:25.738 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 19:56:25.739 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 19:56:25.740 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 19:56:25.743 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:25.745 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:25.746 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 19:56:25.857 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:25.857 [http-nio-8080-exec-9] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 19:56:25.860 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:25.977 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:25.980 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:26.677 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:26.678 [http-nio-8080-exec-3] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 19:56:26.679 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:26.684 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 19:56:26.693 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 19:56:26.693 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 19:56:26.796 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:26.796 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 19:56:26.798 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:26.916 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:26.919 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:27.619 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 19:56:27.621 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:27.624 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:27.625 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 19:56:27.625 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 19:56:27.626 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 19:56:27.737 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 19:56:27.745 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:27.748 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:27.869 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:27.872 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:37.783 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 19:56:37.783 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 19:56:37.786 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 19:56:37.787 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:37.786 [http-nio-8080-exec-1] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 19:56:37.789 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:37.916 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 19:56:37.917 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:37.919 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:56:38.057 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:56:38.059 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:57:34.462 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 19:57:34.464 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:57:34.466 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:57:34.470 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 19:57:34.470 [http-nio-8080-exec-3] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 19:57:34.557 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 19:57:34.567 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 19:57:34.579 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:57:34.582 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 19:57:34.696 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 19:57:34.699 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:00:18.240 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:00:18.245 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:00:18.248 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:00:18.257 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:00:18.269 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:00:18.274 [http-nio-8080-exec-4] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:02:08.839 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 1156 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-29 20:02:08.847 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-29 20:02:09.882 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-29 20:02:09.885 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-29 20:02:09.954 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53ms. Found 0 repository interfaces.
+2019-12-29 20:02:10.250 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7faf099b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-29 20:02:10.552 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-29 20:02:10.565 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-29 20:02:10.573 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-29 20:02:10.573 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-29 20:02:10.581 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-12-29 20:02:10.582 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-29 20:02:10.582 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-29 20:02:10.582 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-29 20:02:11.665 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-29 20:02:11.772 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-29 20:02:11.773 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2876 ms
+2019-12-29 20:02:12.899 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-29 20:02:13.030 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-29 20:02:13.317 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-29 20:02:13.333 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-29 20:02:13.384 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-29 20:02:13.525 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-29 20:02:13.634 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-29 20:02:13.658 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-29 20:02:13.661 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 5.357 seconds (JVM running for 7.114)
+2019-12-29 20:05:13.765 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-29 20:05:13.766 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-29 20:05:13.776 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2019-12-29 20:05:13.798 [http-nio-8080-exec-2] INFO  com.lgq.controller.BlogCommentController - FrancisBlog: getLatestComment
+2019-12-29 20:05:13.855 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-29 20:06:06.590 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 19268 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-29 20:06:06.594 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-29 20:06:07.784 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-29 20:06:07.787 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-29 20:06:07.851 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52ms. Found 0 repository interfaces.
+2019-12-29 20:06:08.138 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$938b97db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-29 20:06:08.438 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-29 20:06:08.451 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-29 20:06:08.459 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-29 20:06:08.460 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-29 20:06:08.467 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-12-29 20:06:08.467 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-29 20:06:08.468 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-29 20:06:08.468 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-29 20:06:09.554 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-29 20:06:09.668 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-29 20:06:09.668 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2963 ms
+2019-12-29 20:06:10.801 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-29 20:06:10.936 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-29 20:06:11.229 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-29 20:06:11.246 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-29 20:06:11.293 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-29 20:06:11.426 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-29 20:06:11.544 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-29 20:06:11.574 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-29 20:06:11.577 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 5.559 seconds (JVM running for 7.342)
+2019-12-29 20:08:17.840 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-29 20:08:17.840 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-29 20:08:17.848 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-12-29 20:08:17.870 [http-nio-8080-exec-1] INFO  com.lgq.controller.BlogCommentController - FrancisBlog: getLatestComment
+2019-12-29 20:08:17.925 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-29 20:09:47.058 [http-nio-8080-exec-6] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogCategoryNum
+2019-12-29 20:09:47.058 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteViewTrend
+2019-12-29 20:09:47.061 [http-nio-8080-exec-5] INFO  com.lgq.controller.BlogController - FrancisBlog: getDateNum
+2019-12-29 20:09:47.176 [http-nio-8080-exec-4] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-12-29 20:09:47.179 [http-nio-8080-exec-4] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-12-29 20:18:10.709 [main] INFO  com.lgq.FrancisBlogApplication - Starting FrancisBlogApplication on DESKTOP-G6KT9CH with PID 18796 (I:\blog_for_feifeifei\blog-for-feifeifei\target\classes started by lin in I:\blog_for_feifeifei\blog-for-feifeifei)
+2019-12-29 20:18:10.712 [main] INFO  com.lgq.FrancisBlogApplication - No active profile set, falling back to default profiles: default
+2019-12-29 20:18:11.840 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-29 20:18:11.847 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-29 20:18:11.910 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50ms. Found 0 repository interfaces.
+2019-12-29 20:18:12.192 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6bea429a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-29 20:18:12.492 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-12-29 20:18:12.504 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-29 20:18:12.513 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-29 20:18:12.513 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-29 20:18:12.520 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-12-29 20:18:12.520 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-12-29 20:18:12.520 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-29 20:18:12.520 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-29 20:18:13.598 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-12-29 20:18:13.709 [main] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring embedded WebApplicationContext
+2019-12-29 20:18:13.709 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2953 ms
+2019-12-29 20:18:14.801 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-29 20:18:14.932 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-29 20:18:15.214 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-29 20:18:15.232 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-29 20:18:15.278 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-29 20:18:15.412 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllAlbumUsingGET_1
+2019-12-29 20:18:15.531 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-29 20:18:15.555 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/francisblog/api/v1'
+2019-12-29 20:18:15.558 [main] INFO  com.lgq.FrancisBlogApplication - Started FrancisBlogApplication in 5.381 seconds (JVM running for 7.084)
+2019-12-29 20:18:31.003 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[.[localhost].[/francisblog/api/v1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-29 20:18:31.004 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-12-29 20:18:31.013 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2019-12-29 20:18:31.047 [http-nio-8080-exec-3] INFO  com.lgq.controller.BlogController - FrancisBlog: getDateNum
+2019-12-29 20:18:31.047 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteViewTrend
+2019-12-29 20:18:31.047 [http-nio-8080-exec-1] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogCategoryNum
+2019-12-29 20:18:31.113 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-12-29 20:18:31.147 [http-nio-8080-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-12-29 20:18:31.148 [http-nio-8080-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-12-29 20:18:50.364 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteViewTrend
+2019-12-29 20:18:50.364 [http-nio-8080-exec-5] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogCategoryNum
+2019-12-29 20:18:50.390 [http-nio-8080-exec-6] INFO  com.lgq.controller.BlogController - FrancisBlog: getDateNum
+2019-12-29 20:18:50.391 [http-nio-8080-exec-7] INFO  com.lgq.controller.BlogCommentController - FrancisBlog: getLatestComment
+2019-12-29 20:19:08.379 [http-nio-8080-exec-8] INFO  com.lgq.controller.TagController - FrancisBlog: getAllTag
+2019-12-29 20:19:09.585 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:19:11.085 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:19:11.946 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:19:13.093 [http-nio-8080-exec-1] INFO  com.lgq.controller.AlbumController - FrancisBlog: getAllAlbum
+2019-12-29 20:19:13.957 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:19:13.963 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:19:13.963 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:19:13.966 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:19:13.978 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:19:13.989 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:19:14.138 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:19:14.144 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:19:15.898 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteViewTrend
+2019-12-29 20:19:15.903 [http-nio-8080-exec-5] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogCategoryNum
+2019-12-29 20:19:15.910 [http-nio-8080-exec-4] INFO  com.lgq.controller.BlogController - FrancisBlog: getDateNum
+2019-12-29 20:19:15.911 [http-nio-8080-exec-7] INFO  com.lgq.controller.BlogCommentController - FrancisBlog: getLatestComment
+2019-12-29 20:19:16.467 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:19:17.880 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:19:18.336 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:19:18.337 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:19:18.336 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:19:18.341 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:19:18.341 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:19:18.343 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:19:18.417 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:19:18.456 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:19:18.458 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:19:18.554 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:19:18.558 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:19:18.659 [http-nio-8080-exec-9] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:19:19.264 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:19:19.267 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:19:19.932 [http-nio-8080-exec-8] INFO  com.lgq.controller.AlbumController - FrancisBlog: getAllAlbum
+2019-12-29 20:19:20.689 [http-nio-8080-exec-2] INFO  com.lgq.controller.CategoryController - FrancisBlog: getAllCategory
+2019-12-29 20:19:21.618 [http-nio-8080-exec-10] INFO  com.lgq.controller.AlbumController - FrancisBlog: getAllAlbum
+2019-12-29 20:19:21.618 [http-nio-8080-exec-9] INFO  com.lgq.controller.AlbumPictureController - FrancisBlog: getAllAlbum
+2019-12-29 20:19:23.015 [http-nio-8080-exec-8] INFO  com.lgq.controller.CategoryController - FrancisBlog: getAllCategory
+2019-12-29 20:19:23.782 [http-nio-8080-exec-2] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllMenu
+2019-12-29 20:19:25.322 [http-nio-8080-exec-4] INFO  com.lgq.controller.UserController - FrancisBlog: getAllUser
+2019-12-29 20:19:30.388 [http-nio-8080-exec-3] INFO  com.lgq.controller.BlogCommentController - FrancisBlog: getAllBlogComment
+2019-12-29 20:19:31.910 [http-nio-8080-exec-1] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:19:43.366 [http-nio-8080-exec-5] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:2
+2019-12-29 20:21:44.051 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:21:44.057 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:21:44.063 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:21:44.065 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:21:44.071 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:21:44.074 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:21:44.133 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:21:44.178 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:21:44.182 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:21:44.277 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:21:44.280 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:21:47.035 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:21:47.038 [http-nio-8080-exec-2] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:21:47.038 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:21:47.041 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:21:47.041 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:21:47.044 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:21:47.044 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:21:48.696 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:21:48.698 [http-nio-8080-exec-7] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:21:48.699 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:21:48.712 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:21:48.713 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:21:48.751 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:21:48.809 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:21:48.812 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:21:48.915 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:21:48.917 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:21:48.979 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:22:07.256 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:22:07.256 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:22:07.257 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:22:07.257 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:22:07.261 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:22:07.263 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:22:24.275 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:22:24.276 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:22:24.276 [http-nio-8080-exec-5] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:22:24.279 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:22:24.282 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:22:24.507 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:22:50.295 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteViewTrend
+2019-12-29 20:22:50.297 [http-nio-8080-exec-6] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogCategoryNum
+2019-12-29 20:22:50.306 [http-nio-8080-exec-1] INFO  com.lgq.controller.BlogController - FrancisBlog: getDateNum
+2019-12-29 20:22:50.312 [http-nio-8080-exec-8] INFO  com.lgq.controller.BlogCommentController - FrancisBlog: getLatestComment
+2019-12-29 20:23:19.755 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:23:19.757 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:23:19.757 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:23:19.760 [http-nio-8080-exec-10] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:23:19.856 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:23:19.856 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:23:19.882 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:23:19.958 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:23:20.058 [http-nio-8080-exec-4] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:23:20.220 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:23:20.227 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:23:20.339 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:23:20.342 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:23:20.438 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:23:20.441 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:23:20.539 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:23:20.542 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:24:18.775 [http-nio-8080-exec-2] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:24:18.775 [http-nio-8080-exec-10] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:24:18.783 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:24:18.784 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:24:18.784 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:24:18.787 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:24:18.787 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:24:18.898 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:24:18.901 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:24:19.019 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:24:19.021 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:24:31.198 [http-nio-8080-exec-2] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogCategoryNum
+2019-12-29 20:24:31.198 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteViewTrend
+2019-12-29 20:24:31.201 [http-nio-8080-exec-7] INFO  com.lgq.controller.BlogController - FrancisBlog: getDateNum
+2019-12-29 20:24:31.203 [http-nio-8080-exec-9] INFO  com.lgq.controller.BlogCommentController - FrancisBlog: getLatestComment
+2019-12-29 20:24:32.816 [http-nio-8080-exec-4] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:24:32.816 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:24:32.816 [http-nio-8080-exec-5] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:24:32.820 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:24:32.820 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:24:32.822 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:24:32.939 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:24:32.942 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:24:33.047 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:24:33.059 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:24:33.061 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:25:38.076 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:25:38.080 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:25:38.087 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:25:38.180 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:25:38.184 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:25:49.198 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:25:49.199 [http-nio-8080-exec-7] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:25:49.201 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:25:49.249 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:25:49.250 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:25:49.312 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:25:49.314 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:25:49.378 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:25:49.386 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:25:49.418 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:25:49.421 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:26:08.155 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:26:08.158 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:26:08.162 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:26:08.278 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:26:08.281 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:27:12.189 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteViewTrend
+2019-12-29 20:27:12.190 [http-nio-8080-exec-5] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogCategoryNum
+2019-12-29 20:27:12.193 [http-nio-8080-exec-2] INFO  com.lgq.controller.BlogController - FrancisBlog: getDateNum
+2019-12-29 20:27:12.197 [http-nio-8080-exec-6] INFO  com.lgq.controller.BlogCommentController - FrancisBlog: getLatestComment
+2019-12-29 20:28:24.543 [http-nio-8080-exec-8] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogCategoryNum
+2019-12-29 20:28:24.543 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteViewTrend
+2019-12-29 20:28:24.545 [http-nio-8080-exec-5] INFO  com.lgq.controller.BlogController - FrancisBlog: getDateNum
+2019-12-29 20:28:24.545 [http-nio-8080-exec-6] INFO  com.lgq.controller.BlogCommentController - FrancisBlog: getLatestComment
+2019-12-29 20:28:30.963 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:28:30.965 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:28:31.034 [http-nio-8080-exec-4] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:28:31.069 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:28:31.074 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:28:31.076 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:28:31.103 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:28:31.146 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:28:31.150 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:28:31.183 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:28:31.186 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:28:36.356 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:28:36.360 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:28:36.360 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:28:36.363 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:28:36.363 [http-nio-8080-exec-10] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:28:36.364 [http-nio-8080-exec-5] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:28:36.365 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:28:36.482 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:28:36.485 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:28:36.704 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:28:36.706 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:29:04.818 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:29:04.820 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:29:04.820 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:29:04.822 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:29:04.823 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:29:04.825 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:29:09.855 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:29:09.858 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:29:09.858 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:29:09.859 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:29:09.861 [http-nio-8080-exec-6] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:29:09.861 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:29:09.863 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:29:09.980 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:29:09.982 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:29:10.095 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:29:10.098 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:29:36.062 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteViewTrend
+2019-12-29 20:29:36.065 [http-nio-8080-exec-10] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogCategoryNum
+2019-12-29 20:29:36.066 [http-nio-8080-exec-6] INFO  com.lgq.controller.BlogController - FrancisBlog: getDateNum
+2019-12-29 20:29:36.075 [http-nio-8080-exec-3] INFO  com.lgq.controller.BlogCommentController - FrancisBlog: getLatestComment
+2019-12-29 20:30:33.617 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:30:33.618 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:30:33.621 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:30:33.624 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:30:33.632 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:30:33.683 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:30:38.757 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:30:38.757 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:30:38.759 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:30:38.761 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:30:38.763 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:30:38.763 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:30:38.875 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:30:38.878 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:30:38.889 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:30:38.979 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:30:38.981 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:30:41.952 [http-nio-8080-exec-2] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:30:41.952 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:30:41.954 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:30:41.957 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:30:41.957 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:30:41.959 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:30:41.959 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:30:42.059 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:30:42.062 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:30:42.177 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:30:42.180 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:31:17.361 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:31:17.361 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:31:17.361 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:31:17.363 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:31:17.588 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:31:17.591 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:31:22.616 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:31:22.616 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:31:22.616 [http-nio-8080-exec-4] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:31:22.618 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:31:22.619 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:31:22.620 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:31:22.621 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:31:22.723 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:31:22.726 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:31:22.818 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:31:22.821 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:21.729 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:21.733 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:21.752 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:33:21.840 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:21.843 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:34.703 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:34.703 [http-nio-8080-exec-1] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:33:34.706 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:34.757 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:33:34.760 [http-nio-8080-exec-7] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:33:34.823 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:34.825 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:34.827 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:33:34.887 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:33:34.887 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:33:34.917 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:34.920 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:39.177 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:39.178 [http-nio-8080-exec-2] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:33:39.180 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:39.182 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:33:39.182 [http-nio-8080-exec-1] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:33:39.184 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:33:39.185 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:33:39.280 [http-nio-8080-exec-10] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:33:39.297 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:39.300 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:39.421 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:39.424 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:40.557 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:40.557 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:33:40.559 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:33:40.559 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:40.560 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:33:40.561 [http-nio-8080-exec-9] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:33:40.562 [http-nio-8080-exec-10] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:33:40.681 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:40.681 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:33:40.683 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:40.820 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:40.823 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:41.702 [http-nio-8080-exec-5] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:2
+2019-12-29 20:33:44.218 [http-nio-8080-exec-7] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:33:44.218 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:33:44.220 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:33:44.220 [http-nio-8080-exec-10] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:33:44.221 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:33:44.224 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:44.229 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:44.337 [http-nio-8080-exec-5] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:33:44.340 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:44.343 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:44.440 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:44.443 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:45.617 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:33:45.617 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:45.619 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:45.620 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:33:45.623 [http-nio-8080-exec-2] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:33:45.623 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:33:45.623 [http-nio-8080-exec-8] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:33:45.743 [http-nio-8080-exec-9] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:33:45.754 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:45.757 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:45.888 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:45.890 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:46.657 [http-nio-8080-exec-6] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:33:46.657 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:46.658 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:33:46.659 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:46.661 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:33:46.661 [http-nio-8080-exec-9] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:33:46.661 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:33:46.760 [http-nio-8080-exec-10] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:33:46.774 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:46.776 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:46.899 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:46.901 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:47.696 [http-nio-8080-exec-4] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:33:47.696 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:33:47.702 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:47.702 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:33:47.704 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:47.704 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:33:47.704 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:33:47.821 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:47.821 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:33:47.823 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:47.941 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:47.943 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:48.665 [http-nio-8080-exec-3] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:33:48.665 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:33:48.668 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:33:48.668 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:33:48.668 [http-nio-8080-exec-8] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:33:48.669 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:48.671 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:48.777 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:33:48.779 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:48.781 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:48.902 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:48.904 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:49.593 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:49.593 [http-nio-8080-exec-2] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:33:49.595 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:49.598 [http-nio-8080-exec-6] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:33:49.598 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:33:49.600 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:33:49.601 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:33:49.699 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:33:49.729 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:49.731 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:49.839 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:49.842 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:50.477 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:33:50.477 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:33:50.479 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:33:50.480 [http-nio-8080-exec-1] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:33:50.480 [http-nio-8080-exec-5] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:33:50.484 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:50.485 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:50.601 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:50.603 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:50.604 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:33:50.725 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:50.727 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:51.421 [http-nio-8080-exec-6] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:2
+2019-12-29 20:33:58.130 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:58.132 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:58.132 [http-nio-8080-exec-5] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:33:58.137 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:33:58.137 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:33:58.140 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:33:58.140 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:33:58.238 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:33:58.240 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:58.242 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:58.337 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:58.340 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:59.317 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:33:59.318 [http-nio-8080-exec-4] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:33:59.320 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:59.320 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:33:59.322 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:59.323 [http-nio-8080-exec-3] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:33:59.326 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:33:59.422 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:33:59.428 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:59.430 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:33:59.542 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:33:59.544 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:00.258 [http-nio-8080-exec-10] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:00.259 [http-nio-8080-exec-1] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:00.259 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:00.262 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:00.262 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:00.264 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:00.266 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:00.359 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:00.379 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:00.382 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:00.480 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:00.483 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:01.018 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:01.018 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:01.018 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:01.021 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:01.021 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:01.022 [http-nio-8080-exec-4] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:01.023 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:01.120 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:01.143 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:01.146 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:01.262 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:01.264 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:01.759 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:01.759 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:01.759 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:01.759 [http-nio-8080-exec-7] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:01.761 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:01.763 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:01.763 [http-nio-8080-exec-6] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:01.880 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:01.880 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:01.883 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:01.980 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:01.982 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:02.398 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:02.398 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:02.399 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:02.400 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:02.401 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:02.402 [http-nio-8080-exec-4] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:02.403 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:02.500 [http-nio-8080-exec-5] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:02.514 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:02.515 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:02.620 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:02.622 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:03.000 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:03.000 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:03.000 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:03.002 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:03.002 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:03.002 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:03.004 [http-nio-8080-exec-2] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:03.119 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:03.119 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:03.121 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:03.232 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:03.234 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:03.658 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:03.658 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:03.660 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:03.662 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:03.662 [http-nio-8080-exec-7] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:03.668 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:03.676 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:03.797 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:03.799 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:03.800 [http-nio-8080-exec-4] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:03.898 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:03.900 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:04.233 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:04.233 [http-nio-8080-exec-7] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:04.235 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:04.236 [http-nio-8080-exec-2] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:04.237 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:04.237 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:04.238 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:04.341 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:04.345 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:04.346 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:04.452 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:04.454 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:04.777 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:04.777 [http-nio-8080-exec-6] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:04.779 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:04.780 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:04.782 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:04.783 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:04.785 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:04.881 [http-nio-8080-exec-4] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:04.897 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:04.899 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:05.003 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:05.005 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:07.738 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:07.738 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:07.740 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:07.740 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:07.741 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:07.742 [http-nio-8080-exec-10] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:07.743 [http-nio-8080-exec-3] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:07.859 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:07.860 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:07.860 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:07.960 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:07.963 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:10.226 [http-nio-8080-exec-9] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:10.226 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:10.228 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:10.229 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:10.229 [http-nio-8080-exec-7] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:10.230 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:10.230 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:10.353 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:10.353 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:10.355 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:10.479 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:10.481 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:11.340 [http-nio-8080-exec-5] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:2
+2019-12-29 20:34:13.214 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:13.215 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:13.215 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:13.216 [http-nio-8080-exec-1] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:13.218 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:13.218 [http-nio-8080-exec-6] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:13.220 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:13.319 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:13.320 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:13.321 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:13.419 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:13.421 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:14.639 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:14.639 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:14.639 [http-nio-8080-exec-10] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:14.641 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:14.643 [http-nio-8080-exec-7] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:14.643 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:14.645 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:14.760 [http-nio-8080-exec-9] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:14.760 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:14.762 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:14.867 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:14.869 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:15.397 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:15.397 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:15.400 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:15.400 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:15.400 [http-nio-8080-exec-5] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:15.401 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:15.404 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:15.501 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:15.515 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:15.517 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:15.618 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:15.620 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:16.097 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:16.099 [http-nio-8080-exec-2] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:16.100 [http-nio-8080-exec-4] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:16.103 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:16.104 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:16.105 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:16.106 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:16.221 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:16.221 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:16.223 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:16.320 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:16.322 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:16.838 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:16.838 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:16.838 [http-nio-8080-exec-1] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:16.841 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:16.841 [http-nio-8080-exec-9] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:16.842 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:16.843 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:16.940 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:16.940 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:16.942 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:17.045 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:17.047 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:38.308 [http-nio-8080-exec-4] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:42.077 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:42.077 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:42.078 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:42.079 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:42.080 [http-nio-8080-exec-6] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:42.081 [http-nio-8080-exec-4] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:42.081 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:42.177 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:42.181 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:42.183 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:42.278 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:42.280 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:57.777 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:57.777 [http-nio-8080-exec-3] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:34:57.779 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:57.779 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:34:57.783 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:34:57.783 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:34:57.784 [http-nio-8080-exec-10] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:34:57.904 [http-nio-8080-exec-1] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:34:57.907 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:57.909 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:34:58.006 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:34:58.008 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:02.333 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:02.334 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:02.337 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:35:02.337 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:35:02.339 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:35:02.340 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:35:02.341 [http-nio-8080-exec-6] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:35:02.460 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:02.461 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:02.559 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:02.561 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:08.738 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:35:08.738 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:35:08.739 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:35:08.740 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:08.741 [http-nio-8080-exec-6] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:35:08.742 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:08.742 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:35:08.857 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:08.860 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:08.980 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:08.982 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:14.118 [http-nio-8080-exec-4] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:35:14.118 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:35:14.120 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:35:14.121 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:14.121 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:35:14.122 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:14.124 [http-nio-8080-exec-5] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:35:14.249 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:14.251 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:14.359 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:14.361 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:47.098 [http-nio-8080-exec-9] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:35:47.098 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:35:47.099 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:35:47.101 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:35:47.101 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:47.101 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:35:47.102 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:47.220 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:47.222 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:47.321 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:47.323 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:53.931 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:53.933 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:53.938 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:35:53.938 [http-nio-8080-exec-10] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:35:53.940 [http-nio-8080-exec-1] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:35:53.940 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:35:53.945 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:35:54.060 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:54.063 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:35:54.186 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:35:54.187 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:36:07.301 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:36:07.301 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:36:07.302 [http-nio-8080-exec-6] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:36:07.303 [http-nio-8080-exec-9] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:36:07.304 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:36:07.305 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:36:07.306 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:36:07.419 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:36:07.421 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:36:07.538 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:36:07.539 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:38:48.086 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:38:48.090 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:38:48.092 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:38:48.093 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:38:48.101 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:38:48.114 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:38:48.144 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:38:48.200 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:38:48.202 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:38:48.320 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:38:48.322 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:38:59.221 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:38:59.221 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:38:59.221 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:38:59.221 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:38:59.223 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:38:59.224 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:38:59.221 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:38:59.340 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:38:59.341 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:38:59.461 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:38:59.463 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:39:03.400 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:39:03.401 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:39:03.400 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:39:03.401 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:39:03.401 [http-nio-8080-exec-10] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:39:03.403 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:39:03.405 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:39:03.501 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:39:03.503 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:39:03.601 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:39:03.602 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:40:13.393 [http-nio-8080-exec-6] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:40:17.399 [http-nio-8080-exec-4] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:2
+2019-12-29 20:40:29.351 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:40:29.353 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:40:29.419 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:40:29.455 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:40:29.457 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:40:29.547 [http-nio-8080-exec-1] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:40:29.560 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:40:29.560 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:40:29.576 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:40:29.577 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:40:29.579 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:41:47.901 [http-nio-8080-exec-6] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:41:47.905 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:41:47.905 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:41:47.911 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:41:47.915 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:41:47.918 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:41:47.919 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:41:48.040 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:41:48.042 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:41:48.164 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:41:48.166 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:41:53.879 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:41:53.880 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:41:53.881 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:41:53.882 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:41:53.882 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:41:53.883 [http-nio-8080-exec-3] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:41:53.883 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:41:54.000 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:41:54.000 [http-nio-8080-exec-2] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogById: blog_id:3
+2019-12-29 20:41:54.002 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:41:54.017 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.BlogServiceImpl - null
+2019-12-29 20:41:54.068 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.BlogServiceImpl - 4
+2019-12-29 20:41:54.117 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:41:54.119 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:02.298 [http-nio-8080-exec-10] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:42:02.300 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:42:02.301 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:42:02.301 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:02.302 [http-nio-8080-exec-9] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogById: blog_id:3
+2019-12-29 20:42:02.304 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:02.304 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:42:02.306 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.BlogServiceImpl - 1577623314018
+2019-12-29 20:42:02.306 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.BlogServiceImpl - 5
+2019-12-29 20:42:02.402 [http-nio-8080-exec-10] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:42:02.409 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:02.410 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:02.526 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:02.528 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:11.713 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:11.715 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:11.718 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:42:11.729 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:42:11.733 [http-nio-8080-exec-3] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:42:11.736 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:42:11.737 [http-nio-8080-exec-4] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:42:11.823 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:11.825 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:11.934 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:11.935 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:17.438 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:42:17.440 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:42:17.441 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:17.442 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:17.443 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:42:17.444 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:42:17.445 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:42:17.561 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:17.562 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:17.676 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:17.677 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:23.317 [http-nio-8080-exec-3] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:42:23.320 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:23.321 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:23.440 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:23.442 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:49.357 [http-nio-8080-exec-7] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:42:49.360 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:49.361 [http-nio-8080-exec-1] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:42:49.362 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:49.481 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:49.483 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:56.362 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:56.362 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:42:56.363 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:56.364 [http-nio-8080-exec-3] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:42:56.460 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:56.462 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:58.879 [http-nio-8080-exec-5] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:42:58.879 [http-nio-8080-exec-10] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:42:58.881 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:58.883 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:42:59.002 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:42:59.004 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:43:00.538 [http-nio-8080-exec-8] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:43:00.541 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:43:00.543 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:43:00.545 [http-nio-8080-exec-1] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:43:00.661 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:43:00.662 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:43:01.398 [http-nio-8080-exec-10] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:43:01.401 [http-nio-8080-exec-2] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:43:01.401 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:43:01.403 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:43:01.521 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:43:01.522 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:43:02.358 [http-nio-8080-exec-7] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:43:02.361 [http-nio-8080-exec-4] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:43:02.363 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:43:02.365 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:43:02.485 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:43:02.487 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:43:03.298 [http-nio-8080-exec-3] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:43:03.302 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:43:03.303 [http-nio-8080-exec-9] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:43:03.304 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:43:03.423 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:43:03.424 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:01.607 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:44:01.607 [http-nio-8080-exec-9] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:44:01.623 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:44:01.632 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:44:01.635 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:44:01.651 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:44:01.653 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:41.206 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:44:41.206 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:44:41.208 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:41.208 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:44:41.209 [http-nio-8080-exec-10] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:44:41.211 [http-nio-8080-exec-3] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:44:41.211 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:44:41.321 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:44:41.322 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:41.322 [http-nio-8080-exec-5] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:44:41.420 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:44:41.422 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:47.619 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:44:47.619 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:44:47.622 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:44:47.622 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:44:47.622 [http-nio-8080-exec-2] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:44:47.625 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:44:47.626 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:47.751 [http-nio-8080-exec-10] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:44:47.751 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:44:47.976 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:48.086 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:44:48.087 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:48.959 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:44:48.959 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:44:48.960 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:48.961 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:44:48.962 [http-nio-8080-exec-6] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:44:48.963 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:44:48.963 [http-nio-8080-exec-3] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:44:49.078 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:44:49.079 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:44:49.080 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:49.183 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:44:49.185 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:50.159 [http-nio-8080-exec-9] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:44:50.159 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:44:50.160 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:44:50.160 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:44:50.162 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:50.163 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:44:50.163 [http-nio-8080-exec-10] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:44:50.280 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:44:50.280 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:44:50.282 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:50.380 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:44:50.383 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:44:53.201 [http-nio-8080-exec-9] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:2
+2019-12-29 20:45:41.454 [http-nio-8080-exec-8] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:45:41.458 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:45:41.461 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:45:41.466 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:45:41.469 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:45:41.517 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:45:41.559 [http-nio-8080-exec-6] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:45:41.702 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:45:41.705 [http-nio-8080-exec-10] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:45:41.712 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:45:41.822 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:45:41.824 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:08.419 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:46:08.419 [http-nio-8080-exec-2] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:46:08.420 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:46:08.421 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:46:08.422 [http-nio-8080-exec-8] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:46:08.427 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:08.435 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:08.549 [http-nio-8080-exec-6] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:46:08.550 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:08.553 [http-nio-8080-exec-2] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:08.665 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:08.817 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:19.746 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:46:19.746 [http-nio-8080-exec-5] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:46:19.749 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:19.749 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:46:19.750 [http-nio-8080-exec-9] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:19.751 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:46:19.751 [http-nio-8080-exec-1] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:46:19.859 [http-nio-8080-exec-7] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:46:19.861 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:20.032 [http-nio-8080-exec-4] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:20.141 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:20.143 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:21.222 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:21.222 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:46:21.222 [http-nio-8080-exec-1] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:46:21.222 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:46:21.224 [http-nio-8080-exec-8] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:21.225 [http-nio-8080-exec-9] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:46:21.226 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:46:21.338 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:21.340 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:21.346 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:46:21.454 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:21.455 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:22.459 [http-nio-8080-exec-4] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:46:22.459 [http-nio-8080-exec-5] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:46:22.461 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:46:22.466 [http-nio-8080-exec-7] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:22.466 [http-nio-8080-exec-2] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:46:22.467 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:46:22.468 [http-nio-8080-exec-7] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:22.580 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:46:22.582 [http-nio-8080-exec-1] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:22.584 [http-nio-8080-exec-1] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:22.700 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:22.701 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:23.779 [http-nio-8080-exec-6] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:46:23.779 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:23.780 [http-nio-8080-exec-7] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:46:23.781 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:23.781 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:46:23.783 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:46:23.783 [http-nio-8080-exec-9] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:46:23.900 [http-nio-8080-exec-2] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:46:23.903 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:23.905 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:24.020 [http-nio-8080-exec-10] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:24.021 [http-nio-8080-exec-10] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:24.798 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteIconController - FrancisBlog: getAllSiteIcon
+2019-12-29 20:46:24.798 [http-nio-8080-exec-8] INFO  com.lgq.controller.SiteTagController - FrancisBlog: getAllSiteTag
+2019-12-29 20:46:24.805 [http-nio-8080-exec-2] INFO  com.lgq.controller.SiteFriendLinkController - FrancisBlog: getAllSiteFriendLink
+2019-12-29 20:46:24.805 [http-nio-8080-exec-6] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:24.805 [http-nio-8080-exec-9] INFO  com.lgq.controller.BlogController - FrancisBlog: getBlogList:1
+2019-12-29 20:46:24.805 [http-nio-8080-exec-4] INFO  com.lgq.controller.MenuController - FrancisBlog: getAllParentMenu
+2019-12-29 20:46:24.806 [http-nio-8080-exec-6] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:24.922 [http-nio-8080-exec-3] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:24.922 [http-nio-8080-exec-8] INFO  com.lgq.controller.AdvertisementController - FrancisBlog: getAllAdvertisement
+2019-12-29 20:46:24.923 [http-nio-8080-exec-3] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29
+2019-12-29 20:46:25.044 [http-nio-8080-exec-5] INFO  com.lgq.controller.SiteController - FrancisBlog: getSiteInfo
+2019-12-29 20:46:25.045 [http-nio-8080-exec-5] INFO  com.lgq.service.impl.SiteServiceImpl - DAY_PAGE_VIEW_PREFIX2019-12-29

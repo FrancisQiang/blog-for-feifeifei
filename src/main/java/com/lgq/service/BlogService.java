@@ -70,4 +70,10 @@ public interface BlogService {
      * @return 每月文章数量
      */
     List<Integer> getMonthNum();
+
+    /**
+     * 获取博客访问数量
+     * @return 博客访问数量排行榜
+     */
+    List<BlogViewNumDTO> getBlogViewNum();
 }

@@ -5,6 +5,11 @@
         <id column="blog_id" jdbcType="INTEGER" property="blogId"/>
         <result column="blog_title" jdbcType="VARCHAR" property="blogTitle"/>
     </resultMap>
+    <resultMap id="BlogViewNumDTO" type="com.lgq.dto.BlogViewNumDTO">
+        <result column="blog_title" jdbcType="VARCHAR" property="blogTitle"/>
+        <result column="blog_views" jdbcType="INTEGER" property="blogViews"/>
+        <result column="blog_update_time" jdbcType="INTEGER" property="blogUpdateTime"/>
+    </resultMap>
     <resultMap id="BlogCategoryNumDTO" type="com.lgq.dto.BlogCategoryNumDTO">
         <result column="category_name" jdbcType="VARCHAR" property="categoryName"/>
         <result column="num" jdbcType="INTEGER" property="num"/>
@@ -461,5 +466,11 @@
     <select id="selectCreateTimeList" resultType="java.util.Date">
         select blog_create_time from blog;
     </select>
+
+    <select id="getBlogViewNum" resultMap="BlogViewNumDTO">
+        select blog_title,blog_views,blog_update_time from blog order by blog_views desc limit 10
+    </select>
+
+
 
 </mapper>

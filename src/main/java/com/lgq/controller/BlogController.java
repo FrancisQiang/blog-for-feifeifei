@@ -81,6 +81,12 @@ public class BlogController {
         return blogService.getMonthNum();
     }
 
+    @RequestMapping(value = "/blog_view", method = RequestMethod.GET)
+    public List<BlogViewNumDTO> getBlogViewNum() {
+        log.info("FrancisBlog: getBlogViewNum");
+        return blogService.getBlogViewNum();
+    }
+
 
 
 }
