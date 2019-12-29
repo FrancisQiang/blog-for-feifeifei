@@ -23,4 +23,6 @@ public class BlogAddVO {
 
     private String blogCover;
 
+    private String blogSummary;
+
 }
