@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author lgq
@@ -24,5 +25,7 @@ public class BlogAddVO {
     private String blogCover;
 
     private String blogSummary;
+
+    private List<Integer> tags;
 
 }

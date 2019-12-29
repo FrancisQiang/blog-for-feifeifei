@@ -49,7 +49,9 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
+    @Transactional(rollbackForClassName = "Exception.class")
     public String addBlog(BlogAddVO blogAddVO) throws BlogException {
+        List<Integer> tags = blogAddVO.getTags();
         BlogWithBLOBs blogWithBLOBs = new BlogWithBLOBs();
         Date date = new Date();
         blogWithBLOBs.setBlogUpdateTime(date);
@@ -64,6 +66,13 @@ public class BlogServiceImpl implements BlogService {
         blogWithBLOBs.setBlogCategoryId(blogAddVO.getBlogCategoryId());
         blogWithBLOBs.setBlogCover(blogAddVO.getBlogCover());
         int row = blogMapper.insertSelective(blogWithBLOBs);
+        int addBlogId = blogWithBLOBs.getBlogId();
+        for (Integer tagId : tags) {
+            BlogTag blogTag = new BlogTag();
+            blogTag.setBlogId(addBlogId);
+            blogTag.setTagId(tagId);
+            blogTagMapper.insertSelective(blogTag);
+        }
         return CodeMessageUtil.addMessage(row);
     }
 

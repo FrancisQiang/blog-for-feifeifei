@@ -4,6 +4,7 @@
     <resultMap id="BlogGetByCategoryDTO" type="com.lgq.dto.BlogGetByCategoryDTO">
         <id column="blog_id" jdbcType="INTEGER" property="blogId"/>
         <result column="blog_title" jdbcType="VARCHAR" property="blogTitle"/>
+        <result column="blog_create_time" jdbcType="TIMESTAMP" property="blogCreateTime"/>
     </resultMap>
     <resultMap id="BlogViewNumDTO" type="com.lgq.dto.BlogViewNumDTO">
         <result column="blog_title" jdbcType="VARCHAR" property="blogTitle"/>
@@ -126,7 +127,7 @@
     <sql id="Blob_Column_List">
         blog_summary, blog_content
     </sql>
-    <select id="selectByExampleWithBLOBs" parameterType="com.lgq.domain.BlogExample" resultMap="ResultMapWithBLOBs">
+    <select id="selectByExampleWithBLOBs" parameterType="com.lgq.domain.BlogExample" resultMap="ResultMapWithBLOBs" >
         select
         <if test="distinct">
             distinct
@@ -175,7 +176,7 @@
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
-    <insert id="insert" parameterType="com.lgq.domain.BlogWithBLOBs">
+    <insert id="insert" parameterType="com.lgq.domain.BlogWithBLOBs" useGeneratedKeys="true" keyProperty="blogId" >
         insert into blog (blog_id, blog_create_time, blog_update_time,
                           blog_title, blog_views, blog_reply,
                           blog_recommend, blog_delete_flag, blog_category_id,
@@ -185,7 +186,7 @@
                 #{blogRecommend,jdbcType=BIT}, #{blogDeleteFlag,jdbcType=BIT}, #{blogCategoryId,jdbcType=INTEGER},
                 #{blogCover,jdbcType=VARCHAR}, #{blogSummary,jdbcType=LONGVARCHAR}, #{blogContent,jdbcType=LONGVARCHAR})
     </insert>
-    <insert id="insertSelective" parameterType="com.lgq.domain.BlogWithBLOBs">
+    <insert id="insertSelective" parameterType="com.lgq.domain.BlogWithBLOBs" useGeneratedKeys="true" keyProperty="blogId" >
         insert into blog
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="blogId != null">

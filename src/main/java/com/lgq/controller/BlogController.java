@@ -87,6 +87,4 @@ public class BlogController {
         return blogService.getBlogViewNum();
     }
 
-
-
 }
