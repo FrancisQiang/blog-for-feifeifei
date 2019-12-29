@@ -31,4 +31,9 @@ public class Constants {
         public static final String EXPIRE_FLAG = "EXPIRE_FLAG";
     }
 
+    public static class MapKey {
+        public static final String SITE_VIEW_TREND_DATE = "date";
+        public static final String SITE_VIEW_TREND_COUNT = "count";
+    }
+
 }

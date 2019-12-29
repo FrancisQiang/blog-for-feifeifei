@@ -9,6 +9,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * @author lgq
  * @date 2019/12/25
@@ -35,6 +38,12 @@ public class SiteController {
     public String updateSiteInfo(@RequestBody Site site) throws BlogException {
         log.info("FrancisBlog: updateSiteInfo -> {}", JSON.toJSONString(site));
         return siteService.updateSiteInfo(site);
+    }
+
+    @RequestMapping(value = "/site/view_trend", method = RequestMethod.GET)
+    public Map<String, List<Object>> getSiteViewTrend() {
+        log.info("FrancisBlog: getSiteViewTrend");
+        return siteService.getSiteViewTrend();
     }
 
 

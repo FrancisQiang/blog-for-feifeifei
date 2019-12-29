@@ -164,7 +164,7 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public String updateBlogById(BlogWithBLOBs blog) throws BlogException {
-        int row = blogMapper.updateByPrimaryKeyWithBLOBs(blog);
+        int row = blogMapper.updateByPrimaryKeySelective(blog);
         return CodeMessageUtil.updateMessage(row);
     }
 

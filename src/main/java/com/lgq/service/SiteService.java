@@ -4,6 +4,9 @@ import com.lgq.domain.Site;
 import com.lgq.exception.BlogException;
 import com.lgq.vo.SiteAndPageViewVO;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * @author lgq
  * @date 2019/12/24
@@ -23,4 +26,11 @@ public interface SiteService {
      * @return 是否成功
      */
     String updateSiteInfo(Site site) throws BlogException;
+
+    /**
+     * 获取近七天的访问量
+     * @return 近七天的访问量
+     */
+    Map<String, List<Object>> getSiteViewTrend();
+
 }

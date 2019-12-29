@@ -6,6 +6,7 @@ import com.lgq.domain.Site;
 import com.lgq.exception.BlogException;
 import com.lgq.service.SiteService;
 import com.lgq.util.CodeMessageUtil;
+import com.lgq.util.DateUtil;
 import com.lgq.util.RedisUtil;
 import com.lgq.vo.SiteAndPageViewVO;
 import lombok.extern.slf4j.Slf4j;
@@ -13,8 +14,8 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Calendar;
-import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /**
  * @author lgq
@@ -41,14 +42,10 @@ public class SiteServiceImpl implements SiteService {
         SiteAndPageViewVO siteAndPageViewVO = new SiteAndPageViewVO();
         BeanUtils.copyProperties(site, siteAndPageViewVO);
         siteAndPageViewVO.setTotalPageView(redisUtil.incr(Constants.RedisKey.TOTAL_PAGE_VIEW));
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(new Date());
-        StringBuilder stringBuilder = new StringBuilder(Constants.RedisKey.DAY_PAGE_VIEW_PREFIX);
-        stringBuilder.append("-").append(calendar.get(Calendar.YEAR)).append("-")
-                .append(calendar.get(Calendar.MONTH) + 1).append("-")
-                .append(calendar.get(Calendar.DAY_OF_MONTH));
-        log.info(stringBuilder.toString());
-        siteAndPageViewVO.setTodayPageView(redisUtil.incr(stringBuilder.toString()));
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String todayPageView = Constants.RedisKey.DAY_PAGE_VIEW_PREFIX + sdf.format(new Date());
+        log.info(todayPageView);
+        siteAndPageViewVO.setTodayPageView(redisUtil.incr(todayPageView));
         return siteAndPageViewVO;
     }
 
@@ -57,5 +54,26 @@ public class SiteServiceImpl implements SiteService {
         site.setSiteId(1);
         int row = siteMapper.updateByPrimaryKey(site);
         return CodeMessageUtil.updateMessage(row);
+    }
+
+    @Override
+    public Map<String, List<Object>> getSiteViewTrend() {
+        Date date = new Date();
+        List<Object> timeList = new ArrayList<>();
+        List<Object> viewList = new ArrayList<>();
+        for (int i = 6; i >= 0; i--) {
+            String pastDate = DateUtil.getPastDate(date, i);
+            timeList.add(pastDate);
+            pastDate = Constants.RedisKey.DAY_PAGE_VIEW_PREFIX + pastDate;
+            Integer viewTime = redisUtil.get(pastDate, Integer.class);
+            if (viewTime == null) {
+                viewTime = 0;
+            }
+            viewList.add(viewTime);
+        }
+        Map<String, List<Object>> returnValue = new HashMap<>();
+        returnValue.put(Constants.MapKey.SITE_VIEW_TREND_DATE, timeList);
+        returnValue.put(Constants.MapKey.SITE_VIEW_TREND_COUNT, viewList);
+        return returnValue;
     }
 }
