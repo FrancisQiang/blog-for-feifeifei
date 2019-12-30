@@ -35,4 +35,6 @@ public interface BlogCommentMapper {
     int updateByPrimaryKey(BlogComment record);
 
     List<BlogComment> getLatestComment();
+
+    List<BlogComment> getBlogCommentByBlogId(Integer id);
 }

@@ -7,6 +7,7 @@ import com.lgq.dto.*;
 import com.lgq.exception.BlogException;
 import com.lgq.service.BlogService;
 import com.lgq.vo.BlogAddVO;
+import com.lgq.vo.BlogUpdateVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -64,7 +65,7 @@ public class BlogController {
     }
 
     @RequestMapping(value = "/blog", method = RequestMethod.PUT)
-    public String updateBlogById(@RequestBody BlogWithBLOBs blog) throws BlogException{
+    public String updateBlogById(@RequestBody BlogUpdateVO blog) throws BlogException{
         log.info("FrancisBlog: updateBlogById -> {}", JSON.toJSONString(blog));
         return blogService.updateBlogById(blog);
     }

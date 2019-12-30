@@ -22,8 +22,6 @@ public class BlogCommentAddVO {
 
     private Integer blogCommentBlogId;
 
-    private Date blogCommentDate;
-
     private Integer blogCommentParentId;
 
     private String blogCommentContent;

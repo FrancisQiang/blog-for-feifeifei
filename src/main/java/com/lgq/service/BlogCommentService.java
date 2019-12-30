@@ -39,4 +39,11 @@ public interface BlogCommentService {
      * @return 最新评论列表
      */
     List<BlogComment> getLatestComment();
+
+    /**
+     * 通过文章获取评论列表
+     * @param blogId 博客id
+     * @return 评论列表
+     */
+    List<BlogComment> getBlogCommentByBlogId(Integer blogId);
 }

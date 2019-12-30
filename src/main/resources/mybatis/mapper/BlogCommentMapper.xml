@@ -293,4 +293,10 @@
     select * from blog_comment order by blog_comment_date desc limit 10
   </select>
 
+  <select id="getBlogCommentByBlogId" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer">
+    select *
+    from blog_comment where blog_comment_blog_id = #{id} and blog_comment_delete_flag = 0
+  </select>
+
+
 </mapper>

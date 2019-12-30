@@ -6,16 +6,14 @@ import com.lgq.constant.Constants;
 import com.lgq.dao.BlogMapper;
 import com.lgq.dao.BlogTagMapper;
 import com.lgq.dao.TagMapper;
-import com.lgq.domain.Blog;
-import com.lgq.domain.BlogTag;
-import com.lgq.domain.BlogWithBLOBs;
-import com.lgq.domain.Tag;
+import com.lgq.domain.*;
 import com.lgq.dto.*;
 import com.lgq.exception.BlogException;
 import com.lgq.service.BlogService;
 import com.lgq.util.CodeMessageUtil;
 import com.lgq.util.RedisUtil;
 import com.lgq.vo.BlogAddVO;
+import com.lgq.vo.BlogUpdateVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -172,8 +170,18 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
-    public String updateBlogById(BlogWithBLOBs blog) throws BlogException {
+    @Transactional(rollbackForClassName = "Exception.class")
+    public String updateBlogById(BlogUpdateVO blog) throws BlogException {
         int row = blogMapper.updateByPrimaryKeySelective(blog);
+        BlogTagExample blogTagExample = new BlogTagExample();
+        blogTagExample.createCriteria().andBlogIdEqualTo(blog.getBlogId());
+        blogTagMapper.deleteByExample(blogTagExample);
+        for (Integer tag : blog.getTags()) {
+            BlogTag blogTag = new BlogTag();
+            blogTag.setTagId(tag);
+            blogTag.setBlogId(blog.getBlogId());
+            blogTagMapper.insertSelective(blogTag);
+        }
         return CodeMessageUtil.updateMessage(row);
     }
 

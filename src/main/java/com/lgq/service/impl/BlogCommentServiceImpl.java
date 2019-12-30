@@ -11,6 +11,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -32,6 +33,7 @@ public class BlogCommentServiceImpl implements BlogCommentService {
     public String addBlogComment(BlogCommentAddVO blogCommentAddVO) throws BlogException {
         BlogComment blogComment = new BlogComment();
         BeanUtils.copyProperties(blogCommentAddVO, blogComment);
+        blogComment.setBlogCommentDate(new Date());
         int row = blogCommentMapper.insertSelective(blogComment);
         return CodeMessageUtil.addMessage(row);
     }
@@ -56,5 +58,10 @@ public class BlogCommentServiceImpl implements BlogCommentService {
     @Override
     public List<BlogComment> getLatestComment() {
         return blogCommentMapper.getLatestComment();
+    }
+
+    @Override
+    public List<BlogComment> getBlogCommentByBlogId(Integer blogId) {
+        return blogCommentMapper.getBlogCommentByBlogId(blogId);
     }
 }

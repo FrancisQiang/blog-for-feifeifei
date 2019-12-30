@@ -4,6 +4,7 @@ import com.lgq.domain.BlogWithBLOBs;
 import com.lgq.dto.*;
 import com.lgq.exception.BlogException;
 import com.lgq.vo.BlogAddVO;
+import com.lgq.vo.BlogUpdateVO;
 
 import java.util.List;
 import java.util.Map;
@@ -57,7 +58,7 @@ public interface BlogService {
      * @return 更新结果
      * @throws BlogException 异常
      */
-    String updateBlogById(BlogWithBLOBs blog)throws BlogException;
+    String updateBlogById(BlogUpdateVO blog)throws BlogException;
 
     /**
      * 获取所有分类的相应博客数量

@@ -52,4 +52,10 @@ public class BlogCommentController {
         return blogCommentService.getLatestComment();
     }
 
+    @RequestMapping(value = "/comment/{blog_id}", method = RequestMethod.GET)
+    public List<BlogComment> getBlogCommentByBlogId(@PathVariable(value = "blog_id")Integer blogId) {
+        log.info("FrancisBlog: getBlogCommentByBlogId:" + blogId);
+        return blogCommentService.getBlogCommentByBlogId(blogId);
+    }
+
 }

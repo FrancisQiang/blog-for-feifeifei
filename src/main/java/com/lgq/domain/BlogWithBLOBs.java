@@ -1,5 +1,9 @@
 package com.lgq.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 public class BlogWithBLOBs extends Blog {
     private String blogSummary;
 
